@@ -5,6 +5,7 @@
         android:allowBackup="true"
         android:label="CyberSecurityApp"
         android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+    package="com.cybersecurity.app">
 
     <application
         android:allowBackup="true"
