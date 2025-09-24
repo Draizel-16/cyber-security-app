@@ -1,0 +1,864 @@
+build	UNKNOWN STEP	﻿2025-09-21T08:41:09.4646301Z Current runner version: '2.328.0'
+build	UNKNOWN STEP	2025-09-21T08:41:09.4679014Z ##[group]Runner Image Provisioner
+build	UNKNOWN STEP	2025-09-21T08:41:09.4680287Z Hosted Compute Agent
+build	UNKNOWN STEP	2025-09-21T08:41:09.4681338Z Version: 20250829.383
+build	UNKNOWN STEP	2025-09-21T08:41:09.4682350Z Commit: 27cb235aab5b0e52e153a26cd86b4742e89dac5d
+build	UNKNOWN STEP	2025-09-21T08:41:09.4683629Z Build Date: 2025-08-29T13:48:48Z
+build	UNKNOWN STEP	2025-09-21T08:41:09.4684544Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:09.4685383Z ##[group]Operating System
+build	UNKNOWN STEP	2025-09-21T08:41:09.4686335Z Ubuntu
+build	UNKNOWN STEP	2025-09-21T08:41:09.4687069Z 24.04.3
+build	UNKNOWN STEP	2025-09-21T08:41:09.4687747Z LTS
+build	UNKNOWN STEP	2025-09-21T08:41:09.4688604Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:09.4689367Z ##[group]Runner Image
+build	UNKNOWN STEP	2025-09-21T08:41:09.4690186Z Image: ubuntu-24.04
+build	UNKNOWN STEP	2025-09-21T08:41:09.4690911Z Version: 20250907.24.1
+build	UNKNOWN STEP	2025-09-21T08:41:09.4692974Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250907.24/images/ubuntu/Ubuntu2404-Readme.md
+build	UNKNOWN STEP	2025-09-21T08:41:09.4695529Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250907.24
+build	UNKNOWN STEP	2025-09-21T08:41:09.4697336Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:09.4699143Z ##[group]GITHUB_TOKEN Permissions
+build	UNKNOWN STEP	2025-09-21T08:41:09.4701805Z Contents: read
+build	UNKNOWN STEP	2025-09-21T08:41:09.4702579Z Metadata: read
+build	UNKNOWN STEP	2025-09-21T08:41:09.4703474Z Packages: read
+build	UNKNOWN STEP	2025-09-21T08:41:09.4704216Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:09.4707484Z Secret source: Actions
+build	UNKNOWN STEP	2025-09-21T08:41:09.4709075Z Prepare workflow directory
+build	UNKNOWN STEP	2025-09-21T08:41:09.5166163Z Prepare all required actions
+build	UNKNOWN STEP	2025-09-21T08:41:09.5224405Z Getting action download info
+build	UNKNOWN STEP	2025-09-21T08:41:09.8551177Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+build	UNKNOWN STEP	2025-09-21T08:41:09.9277915Z Download action repository 'actions/setup-java@v3' (SHA:17f84c3641ba7b8f6deff6309fc4c864478f5d62)
+build	UNKNOWN STEP	2025-09-21T08:41:10.2748392Z Download action repository 'actions/cache@v3' (SHA:2f8e54208210a422b2efd51efaa6bd6d7ca8920f)
+build	UNKNOWN STEP	2025-09-21T08:41:10.5182841Z Complete job name: build
+build	UNKNOWN STEP	2025-09-21T08:41:10.5969365Z ##[group]Run actions/checkout@v3
+build	UNKNOWN STEP	2025-09-21T08:41:10.5970660Z with:
+build	UNKNOWN STEP	2025-09-21T08:41:10.5971674Z   repository: Draizel-16/cyber-security-app
+build	UNKNOWN STEP	2025-09-21T08:41:10.5973004Z   token: ***
+build	UNKNOWN STEP	2025-09-21T08:41:10.5973671Z   ssh-strict: true
+build	UNKNOWN STEP	2025-09-21T08:41:10.5974406Z   persist-credentials: true
+build	UNKNOWN STEP	2025-09-21T08:41:10.5975194Z   clean: true
+build	UNKNOWN STEP	2025-09-21T08:41:10.5975900Z   sparse-checkout-cone-mode: true
+build	UNKNOWN STEP	2025-09-21T08:41:10.5976776Z   fetch-depth: 1
+build	UNKNOWN STEP	2025-09-21T08:41:10.5977453Z   fetch-tags: false
+build	UNKNOWN STEP	2025-09-21T08:41:10.5978132Z   lfs: false
+build	UNKNOWN STEP	2025-09-21T08:41:10.5978770Z   submodules: false
+build	UNKNOWN STEP	2025-09-21T08:41:10.5979492Z   set-safe-directory: true
+build	UNKNOWN STEP	2025-09-21T08:41:10.5980714Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:10.6848061Z Syncing repository: Draizel-16/cyber-security-app
+build	UNKNOWN STEP	2025-09-21T08:41:10.6850837Z ##[group]Getting Git version info
+build	UNKNOWN STEP	2025-09-21T08:41:10.6853038Z Working directory is '/home/runner/work/cyber-security-app/cyber-security-app'
+build	UNKNOWN STEP	2025-09-21T08:41:10.6855206Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2025-09-21T08:41:10.6879119Z git version 2.51.0
+build	UNKNOWN STEP	2025-09-21T08:41:10.6907311Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:10.6922408Z Temporarily overriding HOME='/home/runner/work/_temp/d87cc566-2f83-490e-8aa9-3ff1ce8e68c2' before making global git config changes
+build	UNKNOWN STEP	2025-09-21T08:41:10.6925738Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2025-09-21T08:41:10.6928014Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cyber-security-app/cyber-security-app
+build	UNKNOWN STEP	2025-09-21T08:41:10.6959072Z Deleting the contents of '/home/runner/work/cyber-security-app/cyber-security-app'
+build	UNKNOWN STEP	2025-09-21T08:41:10.6962824Z ##[group]Initializing the repository
+build	UNKNOWN STEP	2025-09-21T08:41:10.6965790Z [command]/usr/bin/git init /home/runner/work/cyber-security-app/cyber-security-app
+build	UNKNOWN STEP	2025-09-21T08:41:10.7031618Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	UNKNOWN STEP	2025-09-21T08:41:10.7034412Z hint: is subject to change. To configure the initial branch name to use in all
+build	UNKNOWN STEP	2025-09-21T08:41:10.7036212Z hint: of your new repositories, which will suppress this warning, call:
+build	UNKNOWN STEP	2025-09-21T08:41:10.7037773Z hint:
+build	UNKNOWN STEP	2025-09-21T08:41:10.7038737Z hint: 	git config --global init.defaultBranch <name>
+build	UNKNOWN STEP	2025-09-21T08:41:10.7040413Z hint:
+build	UNKNOWN STEP	2025-09-21T08:41:10.7042163Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	UNKNOWN STEP	2025-09-21T08:41:10.7044838Z hint: 'development'. The just-created branch can be renamed via this command:
+build	UNKNOWN STEP	2025-09-21T08:41:10.7046406Z hint:
+build	UNKNOWN STEP	2025-09-21T08:41:10.7047069Z hint: 	git branch -m <name>
+build	UNKNOWN STEP	2025-09-21T08:41:10.7047857Z hint:
+build	UNKNOWN STEP	2025-09-21T08:41:10.7048922Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	UNKNOWN STEP	2025-09-21T08:41:10.7051121Z Initialized empty Git repository in /home/runner/work/cyber-security-app/cyber-security-app/.git/
+build	UNKNOWN STEP	2025-09-21T08:41:10.7054508Z [command]/usr/bin/git remote add origin https://github.com/Draizel-16/cyber-security-app
+build	UNKNOWN STEP	2025-09-21T08:41:10.7077857Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:10.7079983Z ##[group]Disabling automatic garbage collection
+build	UNKNOWN STEP	2025-09-21T08:41:10.7081920Z [command]/usr/bin/git config --local gc.auto 0
+build	UNKNOWN STEP	2025-09-21T08:41:10.7108231Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:10.7109644Z ##[group]Setting up auth
+build	UNKNOWN STEP	2025-09-21T08:41:10.7112543Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2025-09-21T08:41:10.7139246Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2025-09-21T08:41:10.7404872Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2025-09-21T08:41:10.7431502Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2025-09-21T08:41:10.7653840Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	UNKNOWN STEP	2025-09-21T08:41:10.7685558Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:10.7687007Z ##[group]Fetching the repository
+build	UNKNOWN STEP	2025-09-21T08:41:10.7695023Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +3b34d7eb4ac14d7e88a7a76e50532b97997f044b:refs/remotes/origin/main
+build	UNKNOWN STEP	2025-09-21T08:41:10.9362315Z remote: Enumerating objects: 32, done.        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9364039Z remote: Counting objects:   3% (1/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9365142Z remote: Counting objects:   6% (2/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9366221Z remote: Counting objects:   9% (3/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9367297Z remote: Counting objects:  12% (4/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9369324Z remote: Counting objects:  15% (5/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9370407Z remote: Counting objects:  18% (6/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9371733Z remote: Counting objects:  21% (7/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9372779Z remote: Counting objects:  25% (8/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9373867Z remote: Counting objects:  28% (9/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9374896Z remote: Counting objects:  31% (10/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9375959Z remote: Counting objects:  34% (11/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9377006Z remote: Counting objects:  37% (12/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9378045Z remote: Counting objects:  40% (13/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9379131Z remote: Counting objects:  43% (14/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9380168Z remote: Counting objects:  46% (15/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9381321Z remote: Counting objects:  50% (16/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9382368Z remote: Counting objects:  53% (17/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9383411Z remote: Counting objects:  56% (18/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9384436Z remote: Counting objects:  59% (19/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9385472Z remote: Counting objects:  62% (20/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9386506Z remote: Counting objects:  65% (21/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9387566Z remote: Counting objects:  68% (22/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9388599Z remote: Counting objects:  71% (23/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9389908Z remote: Counting objects:  75% (24/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9391100Z remote: Counting objects:  78% (25/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9392168Z remote: Counting objects:  81% (26/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9393243Z remote: Counting objects:  84% (27/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9394297Z remote: Counting objects:  87% (28/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9395477Z remote: Counting objects:  90% (29/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9396529Z remote: Counting objects:  93% (30/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9397586Z remote: Counting objects:  96% (31/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9398650Z remote: Counting objects: 100% (32/32)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9399766Z remote: Counting objects: 100% (32/32), done.        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9400924Z remote: Compressing objects:   4% (1/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9402134Z remote: Compressing objects:   9% (2/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9403260Z remote: Compressing objects:  13% (3/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9404373Z remote: Compressing objects:  18% (4/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9405490Z remote: Compressing objects:  22% (5/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9406596Z remote: Compressing objects:  27% (6/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9407686Z remote: Compressing objects:  31% (7/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9409349Z remote: Compressing objects:  36% (8/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9411768Z remote: Compressing objects:  40% (9/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9413615Z remote: Compressing objects:  45% (10/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9414755Z remote: Compressing objects:  50% (11/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9415850Z remote: Compressing objects:  54% (12/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9416983Z remote: Compressing objects:  59% (13/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9418113Z remote: Compressing objects:  63% (14/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9420547Z remote: Compressing objects:  68% (15/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9422221Z remote: Compressing objects:  72% (16/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9423379Z remote: Compressing objects:  77% (17/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9424520Z remote: Compressing objects:  81% (18/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9425706Z remote: Compressing objects:  86% (19/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9426842Z remote: Compressing objects:  90% (20/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9428143Z remote: Compressing objects:  95% (21/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9429368Z remote: Compressing objects: 100% (22/22)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9430580Z remote: Compressing objects: 100% (22/22), done.        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9464818Z remote: Total 32 (delta 0), reused 25 (delta 0), pack-reused 0 (from 0)        
+build	UNKNOWN STEP	2025-09-21T08:41:10.9534357Z From https://github.com/Draizel-16/cyber-security-app
+build	UNKNOWN STEP	2025-09-21T08:41:10.9536782Z  * [new ref]         3b34d7eb4ac14d7e88a7a76e50532b97997f044b -> origin/main
+build	UNKNOWN STEP	2025-09-21T08:41:10.9566945Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:10.9569024Z ##[group]Determining the checkout info
+build	UNKNOWN STEP	2025-09-21T08:41:10.9571736Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:10.9573715Z ##[group]Checking out the ref
+build	UNKNOWN STEP	2025-09-21T08:41:10.9576085Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build	UNKNOWN STEP	2025-09-21T08:41:10.9635992Z Switched to a new branch 'main'
+build	UNKNOWN STEP	2025-09-21T08:41:10.9638643Z branch 'main' set up to track 'origin/main'.
+build	UNKNOWN STEP	2025-09-21T08:41:10.9645870Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:10.9677019Z [command]/usr/bin/git log -1 --format='%H'
+build	UNKNOWN STEP	2025-09-21T08:41:10.9698943Z '3b34d7eb4ac14d7e88a7a76e50532b97997f044b'
+build	UNKNOWN STEP	2025-09-21T08:41:11.0017073Z ##[group]Run actions/setup-java@v3
+build	UNKNOWN STEP	2025-09-21T08:41:11.0017963Z with:
+build	UNKNOWN STEP	2025-09-21T08:41:11.0018583Z   distribution: temurin
+build	UNKNOWN STEP	2025-09-21T08:41:11.0019311Z   java-version: 17
+build	UNKNOWN STEP	2025-09-21T08:41:11.0020008Z   java-package: jdk
+build	UNKNOWN STEP	2025-09-21T08:41:11.0020713Z   check-latest: false
+build	UNKNOWN STEP	2025-09-21T08:41:11.0021630Z   server-id: github
+build	UNKNOWN STEP	2025-09-21T08:41:11.0022347Z   server-username: GITHUB_ACTOR
+build	UNKNOWN STEP	2025-09-21T08:41:11.0023192Z   server-password: GITHUB_TOKEN
+build	UNKNOWN STEP	2025-09-21T08:41:11.0024034Z   overwrite-settings: true
+build	UNKNOWN STEP	2025-09-21T08:41:11.0024810Z   job-status: success
+build	UNKNOWN STEP	2025-09-21T08:41:11.0025962Z   token: ***
+build	UNKNOWN STEP	2025-09-21T08:41:11.0026578Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:11.2020166Z ##[group]Installed distributions
+build	UNKNOWN STEP	2025-09-21T08:41:11.2070150Z Resolved Java 17.0.16+8 from tool-cache
+build	UNKNOWN STEP	2025-09-21T08:41:11.2071467Z Setting Java 17.0.16+8 as the default
+build	UNKNOWN STEP	2025-09-21T08:41:11.2084072Z Creating toolchains.xml for JDK version 17 from temurin
+build	UNKNOWN STEP	2025-09-21T08:41:11.2160880Z Writing to /home/runner/.m2/toolchains.xml
+build	UNKNOWN STEP	2025-09-21T08:41:11.2162495Z 
+build	UNKNOWN STEP	2025-09-21T08:41:11.2163084Z Java configuration:
+build	UNKNOWN STEP	2025-09-21T08:41:11.2164480Z   Distribution: temurin
+build	UNKNOWN STEP	2025-09-21T08:41:11.2165889Z   Version: 17.0.16+8
+build	UNKNOWN STEP	2025-09-21T08:41:11.2167555Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	UNKNOWN STEP	2025-09-21T08:41:11.2168918Z 
+build	UNKNOWN STEP	2025-09-21T08:41:11.2170136Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:11.2186792Z Creating settings.xml with server-id: github
+build	UNKNOWN STEP	2025-09-21T08:41:11.2192476Z Writing to /home/runner/.m2/settings.xml
+build	UNKNOWN STEP	2025-09-21T08:41:11.3105151Z ##[group]Run actions/cache@v3
+build	UNKNOWN STEP	2025-09-21T08:41:11.3105956Z with:
+build	UNKNOWN STEP	2025-09-21T08:41:11.3106655Z   path: ~/.gradle/caches
+build	UNKNOWN STEP	~/.gradle/wrapper
+build	UNKNOWN STEP	
+build	UNKNOWN STEP	2025-09-21T08:41:11.3108039Z   key: Linux-gradle-5f68b69d8bf8f93a4c35a2980b26653aa19557fc8f2eeb29b3e31b4960674fc7
+build	UNKNOWN STEP	2025-09-21T08:41:11.3109401Z   restore-keys: Linux-gradle-
+build	UNKNOWN STEP	
+build	UNKNOWN STEP	2025-09-21T08:41:11.3110209Z   enableCrossOsArchive: false
+build	UNKNOWN STEP	2025-09-21T08:41:11.3111260Z   fail-on-cache-miss: false
+build	UNKNOWN STEP	2025-09-21T08:41:11.3112027Z   lookup-only: false
+build	UNKNOWN STEP	2025-09-21T08:41:11.3112690Z env:
+build	UNKNOWN STEP	2025-09-21T08:41:11.3113577Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	UNKNOWN STEP	2025-09-21T08:41:11.3115031Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	UNKNOWN STEP	2025-09-21T08:41:11.3116156Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:11.5771232Z Cache not found for input keys: Linux-gradle-5f68b69d8bf8f93a4c35a2980b26653aa19557fc8f2eeb29b3e31b4960674fc7, Linux-gradle-
+build	UNKNOWN STEP	2025-09-21T08:41:11.5889133Z ##[group]Run chmod +x gradlew
+build	UNKNOWN STEP	2025-09-21T08:41:11.5889993Z [36;1mchmod +x gradlew[0m
+build	UNKNOWN STEP	2025-09-21T08:41:11.5942935Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-09-21T08:41:11.5943696Z env:
+build	UNKNOWN STEP	2025-09-21T08:41:11.5944600Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	UNKNOWN STEP	2025-09-21T08:41:11.5946205Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	UNKNOWN STEP	2025-09-21T08:41:11.5947311Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:11.6086709Z ##[group]Run ./gradlew clean --no-daemon
+build	UNKNOWN STEP	2025-09-21T08:41:11.6087696Z [36;1m./gradlew clean --no-daemon[0m
+build	UNKNOWN STEP	2025-09-21T08:41:11.6120512Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-09-21T08:41:11.6121497Z env:
+build	UNKNOWN STEP	2025-09-21T08:41:11.6122410Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	UNKNOWN STEP	2025-09-21T08:41:11.6123837Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	UNKNOWN STEP	2025-09-21T08:41:11.6124953Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:41:12.6995015Z Downloading https://services.gradle.org/distributions/gradle-8.7-all.zip
+build	UNKNOWN STEP	2025-09-21T08:41:15.3021290Z .....................10%.....................20%......................30%.....................40%......................50%.....................60%.....................70%......................80%.....................90%......................100%
+build	UNKNOWN STEP	2025-09-21T08:41:18.3558097Z 
+build	UNKNOWN STEP	2025-09-21T08:41:18.3559090Z Welcome to Gradle 8.7!
+build	UNKNOWN STEP	2025-09-21T08:41:18.3559646Z 
+build	UNKNOWN STEP	2025-09-21T08:41:18.3560035Z Here are the highlights of this release:
+build	UNKNOWN STEP	2025-09-21T08:41:18.3560599Z  - Compiling and testing with Java 22
+build	UNKNOWN STEP	2025-09-21T08:41:18.3561297Z  - Cacheable Groovy script compilation
+build	UNKNOWN STEP	2025-09-21T08:41:18.3561837Z  - New methods in lazy collection properties
+build	UNKNOWN STEP	2025-09-21T08:41:18.3562217Z 
+build	UNKNOWN STEP	2025-09-21T08:41:18.3562558Z For more details see https://docs.gradle.org/8.7/release-notes.html
+build	UNKNOWN STEP	2025-09-21T08:41:18.3563054Z 
+build	UNKNOWN STEP	2025-09-21T08:41:18.5545153Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.7/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+build	UNKNOWN STEP	2025-09-21T08:41:19.8540604Z Daemon will be stopped at the end of the build 
+build	UNKNOWN STEP	2025-09-21T08:42:36.6560824Z > Task :clean UP-TO-DATE
+build	UNKNOWN STEP	2025-09-21T08:42:36.6561598Z > Task :app:clean UP-TO-DATE
+build	UNKNOWN STEP	2025-09-21T08:42:36.6561875Z 
+build	UNKNOWN STEP	2025-09-21T08:42:36.6562048Z BUILD SUCCESSFUL in 1m 24s
+build	UNKNOWN STEP	2025-09-21T08:42:36.6562466Z 2 actionable tasks: 2 up-to-date
+build	UNKNOWN STEP	2025-09-21T08:42:37.0245955Z ##[group]Run ./gradlew lint --no-daemon --stacktrace --info
+build	UNKNOWN STEP	2025-09-21T08:42:37.0246381Z [36;1m./gradlew lint --no-daemon --stacktrace --info[0m
+build	UNKNOWN STEP	2025-09-21T08:42:37.0279994Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-09-21T08:42:37.0280230Z env:
+build	UNKNOWN STEP	2025-09-21T08:42:37.0280521Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	UNKNOWN STEP	2025-09-21T08:42:37.0281177Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	UNKNOWN STEP	2025-09-21T08:42:37.0281522Z ##[endgroup]
+build	UNKNOWN STEP	2025-09-21T08:42:37.4006701Z Initialized native services in: /home/runner/.gradle/native
+build	UNKNOWN STEP	2025-09-21T08:42:37.4024316Z Initialized jansi services in: /home/runner/.gradle/native
+build	UNKNOWN STEP	2025-09-21T08:42:37.6162140Z Received JVM installation metadata from '/usr/lib/jvm/temurin-17-jdk-amd64': {JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64, JAVA_VERSION=17.0.16, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.16+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.16+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+build	UNKNOWN STEP	2025-09-21T08:42:37.7154523Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.7/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+build	UNKNOWN STEP	2025-09-21T08:42:37.7171235Z Starting process 'Gradle build daemon'. Working directory: /home/runner/.gradle/daemon/8.7 Command: /usr/lib/jvm/temurin-17-jdk-amd64/bin/java --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -XX:MaxMetaspaceSize=384m -XX:+HeapDumpOnOutOfMemoryError -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country -Duser.language=en -Duser.variant -cp /home/runner/.gradle/wrapper/dists/gradle-8.7-all/aan3ydargesu18aqyqjwhr3pc/gradle-8.7/lib/gradle-launcher-8.7.jar -javaagent:/home/runner/.gradle/wrapper/dists/gradle-8.7-all/aan3ydargesu18aqyqjwhr3pc/gradle-8.7/lib/agents/gradle-instrumentation-agent-8.7.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.7
+build	UNKNOWN STEP	2025-09-21T08:42:37.7176797Z Successfully started process 'Gradle build daemon'
+build	UNKNOWN STEP	2025-09-21T08:42:38.5149047Z An attempt to start the daemon took 0.836 secs.
+build	UNKNOWN STEP	2025-09-21T08:42:38.6156156Z The client will now receive all logging from the daemon (pid: 2405). The daemon log file: /home/runner/.gradle/daemon/8.7/daemon-2405.out.log
+build	UNKNOWN STEP	2025-09-21T08:42:38.7153140Z Closing daemon's stdin at end of input.
+build	UNKNOWN STEP	2025-09-21T08:42:38.7153830Z The daemon will no longer process any standard input.
+build	UNKNOWN STEP	2025-09-21T08:42:38.7154385Z Daemon will be stopped at the end of the build 
+build	UNKNOWN STEP	2025-09-21T08:42:38.9152158Z Using 4 worker leases.
+build	UNKNOWN STEP	2025-09-21T08:42:39.1171701Z Received JVM installation metadata from '/usr/lib/jvm/temurin-17-jdk-amd64': {JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64, JAVA_VERSION=17.0.16, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.16+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.16+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+build	UNKNOWN STEP	2025-09-21T08:42:39.4151666Z Watching the file system is configured to be enabled if available
+build	UNKNOWN STEP	2025-09-21T08:42:39.4152689Z Now considering [/home/runner/work/cyber-security-app/cyber-security-app] as hierarchies to watch
+build	UNKNOWN STEP	2025-09-21T08:42:39.4153457Z File system watching is active
+build	UNKNOWN STEP	2025-09-21T08:42:40.1168312Z Starting Build
+build	UNKNOWN STEP	2025-09-21T08:42:40.4149377Z Settings evaluated using settings file '/home/runner/work/cyber-security-app/cyber-security-app/settings.gradle'.
+build	UNKNOWN STEP	2025-09-21T08:42:40.8153347Z Projects loaded. Root project using build file '/home/runner/work/cyber-security-app/cyber-security-app/build.gradle'.
+build	UNKNOWN STEP	2025-09-21T08:42:40.8168088Z Included projects: [root project 'CyberSecurityApp', project ':app']
+build	UNKNOWN STEP	2025-09-21T08:42:42.2149239Z 
+build	UNKNOWN STEP	2025-09-21T08:42:42.2173095Z > Configure project :
+build	UNKNOWN STEP	2025-09-21T08:42:42.2179191Z Evaluating root project 'CyberSecurityApp' using build file '/home/runner/work/cyber-security-app/cyber-security-app/build.gradle'.
+build	UNKNOWN STEP	2025-09-21T08:42:42.2249950Z Transforming gradle-8.3.2.jar (com.android.tools.build:gradle:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2286437Z Transforming kotlin-gradle-plugin-model-1.9.22.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2312342Z Transforming kotlin-gradle-plugin-api-1.9.22.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2314573Z Transforming kotlin-gradle-plugin-1.9.22-gradle82.jar (org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2316727Z Transforming gradle-settings-api-8.3.2.jar (com.android.tools.build:gradle-settings-api:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2318518Z Transforming lint-model-31.3.2.jar (com.android.tools.lint:lint-model:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2320227Z Transforming builder-8.3.2.jar (com.android.tools.build:builder:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2322042Z Transforming manifest-merger-31.3.2.jar (com.android.tools.build:manifest-merger:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2323843Z Transforming sdk-common-31.3.2.jar (com.android.tools:sdk-common:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2325325Z Transforming sdklib-31.3.2.jar (com.android.tools:sdklib:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2326989Z Transforming repository-31.3.2.jar (com.android.tools:repository:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2328662Z Transforming gradle-api-8.3.2.jar (com.android.tools.build:gradle-api:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2330395Z Transforming builder-test-api-8.3.2.jar (com.android.tools.build:builder-test-api:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2332395Z Transforming ddmlib-31.3.2.jar (com.android.tools.ddms:ddmlib:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2333939Z Transforming aaptcompiler-8.3.2.jar (com.android.tools.build:aaptcompiler:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2335468Z Transforming bundletool-1.15.6.jar (com.android.tools.build:bundletool:1.15.6) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2337207Z Transforming aapt2-proto-8.3.2-10880808.jar (com.android.tools.build:aapt2-proto:8.3.2-10880808) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2338843Z Transforming crash-31.3.2.jar (com.android.tools.analytics-library:crash:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2340570Z Transforming tracker-31.3.2.jar (com.android.tools.analytics-library:tracker:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2342472Z Transforming shared-31.3.2.jar (com.android.tools.analytics-library:shared:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2344322Z Transforming lint-typedef-remover-31.3.2.jar (com.android.tools.lint:lint-typedef-remover:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2346335Z Transforming databinding-compiler-common-8.3.2.jar (androidx.databinding:databinding-compiler-common:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2398380Z Transforming databinding-common-8.3.2.jar (androidx.databinding:databinding-common:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2400681Z Transforming baseLibrary-8.3.2.jar (com.android.databinding:baseLibrary:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2402672Z Transforming layoutlib-api-31.3.2.jar (com.android.tools.layoutlib:layoutlib-api:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2405264Z Transforming android-device-provider-ddmlib-proto-31.3.2.jar (com.android.tools.utp:android-device-provider-ddmlib-proto:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2407733Z Transforming android-device-provider-gradle-proto-31.3.2.jar (com.android.tools.utp:android-device-provider-gradle-proto:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2410522Z Transforming android-test-plugin-host-additional-test-output-proto-31.3.2.jar (com.android.tools.utp:android-test-plugin-host-additional-test-output-proto:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2413432Z Transforming android-test-plugin-host-coverage-proto-31.3.2.jar (com.android.tools.utp:android-test-plugin-host-coverage-proto:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2416062Z Transforming android-test-plugin-host-emulator-control-proto-31.3.2.jar (com.android.tools.utp:android-test-plugin-host-emulator-control-proto:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2418660Z Transforming android-test-plugin-host-logcat-proto-31.3.2.jar (com.android.tools.utp:android-test-plugin-host-logcat-proto:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2421381Z Transforming android-test-plugin-host-apk-installer-proto-31.3.2.jar (com.android.tools.utp:android-test-plugin-host-apk-installer-proto:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2424002Z Transforming android-test-plugin-host-retention-proto-31.3.2.jar (com.android.tools.utp:android-test-plugin-host-retention-proto:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2426816Z Transforming android-test-plugin-result-listener-gradle-proto-31.3.2.jar (com.android.tools.utp:android-test-plugin-result-listener-gradle-proto:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2462105Z Transforming builder-model-8.3.2.jar (com.android.tools.build:builder-model:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2464168Z Transforming dvlib-31.3.2.jar (com.android.tools:dvlib:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2465993Z Transforming common-31.3.2.jar (com.android.tools:common:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2468166Z Transforming jetifier-processor-1.0.0-beta10.jar (com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta10) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2470728Z Transforming jetifier-core-1.0.0-beta10.jar (com.android.tools.build.jetifier:jetifier-core:1.0.0-beta10) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2499004Z Transforming kotlin-reflect-1.9.20.jar (org.jetbrains.kotlin:kotlin-reflect:1.9.20) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2501212Z Transforming kotlin-stdlib-jdk7-1.9.20.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2503351Z Transforming kotlin-stdlib-1.9.20.jar (org.jetbrains.kotlin:kotlin-stdlib:1.9.20) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2505324Z Transforming kotlin-stdlib-jdk8-1.9.20.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2507732Z Transforming transform-api-2.0.0-deprecated-use-gradle-api.jar (com.android.tools.build:transform-api:2.0.0-deprecated-use-gradle-api) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2510627Z Transforming httpmime-4.5.6.jar (org.apache.httpcomponents:httpmime:4.5.6) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2512563Z Transforming commons-io-2.13.0.jar (commons-io:commons-io:2.13.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2514392Z Transforming asm-commons-9.6.jar (org.ow2.asm:asm-commons:9.6) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2516091Z Transforming asm-util-9.6.jar (org.ow2.asm:asm-util:9.6) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2517552Z Transforming asm-analysis-9.6.jar (org.ow2.asm:asm-analysis:9.6) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2519071Z Transforming asm-tree-9.6.jar (org.ow2.asm:asm-tree:9.6) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2520537Z Transforming asm-9.6.jar (org.ow2.asm:asm:9.6) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2522152Z Transforming apkzlib-8.3.2.jar (com.android.tools.build:apkzlib:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2523843Z Transforming bcpkix-jdk15on-1.67.jar (org.bouncycastle:bcpkix-jdk15on:1.67) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2525576Z Transforming jaxb-runtime-2.3.2.jar (org.glassfish.jaxb:jaxb-runtime:2.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2527208Z Transforming jopt-simple-4.9.jar (net.sf.jopt-simple:jopt-simple:4.9) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2528967Z Transforming javapoet-1.10.0.jar (com.squareup:javapoet:1.10.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2530918Z Transforming protobuf-java-util-3.22.3.jar (com.google.protobuf:protobuf-java-util:3.22.3) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2532985Z Transforming grpc-protobuf-1.57.0.jar (io.grpc:grpc-protobuf:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2534826Z Transforming tink-1.7.0.jar (com.google.crypto.tink:tink:1.7.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2536582Z Transforming protos-31.3.2.jar (com.android.tools.analytics-library:protos:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2539261Z Transforming proto-google-common-protos-2.17.0.jar (com.google.api.grpc:proto-google-common-protos:2.17.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2540900Z Transforming protobuf-java-3.22.3.jar (com.google.protobuf:protobuf-java:3.22.3) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2542425Z Transforming grpc-netty-1.57.0.jar (io.grpc:grpc-netty:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2543637Z Transforming grpc-core-1.57.0.jar (io.grpc:grpc-core:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2544802Z Transforming gson-2.10.1.jar (com.google.code.gson:gson:2.10.1) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2545997Z Transforming grpc-stub-1.57.0.jar (io.grpc:grpc-stub:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2547421Z Transforming core-proto-0.0.9-alpha02.jar (com.google.testing.platform:core-proto:0.0.9-alpha02) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2548824Z Transforming kxml2-2.3.0.jar (net.sf.kxml:kxml2:2.3.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2550292Z Transforming tensorflow-lite-metadata-0.1.0-rc2.jar (org.tensorflow:tensorflow-lite-metadata:0.1.0-rc2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2552152Z Transforming flatbuffers-java-1.12.0.jar (com.google.flatbuffers:flatbuffers-java:1.12.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2554408Z Transforming kotlin-gradle-plugin-idea-proto-1.9.22.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-idea-proto:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2556218Z Transforming kotlin-gradle-plugin-idea-1.9.22.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-idea:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2557965Z Transforming kotlin-klib-commonizer-api-1.9.22.jar (org.jetbrains.kotlin:kotlin-klib-commonizer-api:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2559547Z Transforming kotlin-native-utils-1.9.22.jar (org.jetbrains.kotlin:kotlin-native-utils:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2561291Z Transforming kotlin-util-klib-1.9.22.jar (org.jetbrains.kotlin:kotlin-util-klib:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2562911Z Transforming kotlin-build-tools-api-1.9.22.jar (org.jetbrains.kotlin:kotlin-build-tools-api:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2564648Z Transforming kotlin-android-extensions-1.9.22.jar (org.jetbrains.kotlin:kotlin-android-extensions:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2566389Z Transforming kotlin-compiler-runner-1.9.22.jar (org.jetbrains.kotlin:kotlin-compiler-runner:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2568165Z Transforming kotlin-compiler-embeddable-1.9.22.jar (org.jetbrains.kotlin:kotlin-compiler-embeddable:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2570181Z Transforming kotlin-scripting-compiler-embeddable-1.9.22.jar (org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2572598Z Transforming kotlin-scripting-compiler-impl-embeddable-1.9.22.jar (org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2574402Z Transforming jimfs-1.1.jar (com.google.jimfs:jimfs:1.1) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2575701Z Transforming grpc-context-1.57.0.jar (io.grpc:grpc-context:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2576964Z Transforming grpc-protobuf-lite-1.57.0.jar (io.grpc:grpc-protobuf-lite:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2578139Z Transforming grpc-api-1.57.0.jar (io.grpc:grpc-api:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2579250Z Transforming guava-32.0.1-jre.jar (com.google.guava:guava:32.0.1-jre) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2580501Z Transforming dagger-2.28.3.jar (com.google.dagger:dagger:2.28.3) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2581957Z Transforming javax.inject-1.jar (javax.inject:javax.inject:1) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2583319Z Transforming bcprov-jdk15on-1.67.jar (org.bouncycastle:bcprov-jdk15on:1.67) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2584806Z Transforming trove4j-1.0.20200330.jar (org.jetbrains.intellij.deps:trove4j:1.0.20200330) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2586277Z Transforming commons-compress-1.21.jar (org.apache.commons:commons-compress:1.21) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2587757Z Transforming httpclient-4.5.14.jar (org.apache.httpcomponents:httpclient:4.5.14) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2589219Z Transforming httpcore-4.4.16.jar (org.apache.httpcomponents:httpcore:4.4.16) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2590913Z Transforming javax.activation-1.2.0.jar (com.sun.activation:javax.activation:1.2.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2592831Z Transforming annotations-23.0.0.jar (org.jetbrains:annotations:23.0.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2594183Z Transforming signflinger-8.3.2.jar (com.android:signflinger:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2595479Z Transforming zipflinger-8.3.2.jar (com.android:zipflinger:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2596883Z Transforming annotations-31.3.2.jar (com.android.tools:annotations:31.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2598248Z Transforming jna-platform-5.6.0.jar (net.java.dev.jna:jna-platform:5.6.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2644854Z Transforming juniversalchardet-1.0.3.jar (com.googlecode.juniversalchardet:juniversalchardet:1.0.3) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2646671Z Transforming javax.annotation-api-1.3.2.jar (javax.annotation:javax.annotation-api:1.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2648143Z Transforming stax-ex-1.8.1.jar (org.jvnet.staxex:stax-ex:1.8.1) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2649600Z Transforming jakarta.xml.bind-api-2.3.2.jar (jakarta.xml.bind:jakarta.xml.bind-api:2.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2651285Z Transforming txw2-2.3.2.jar (org.glassfish.jaxb:txw2:2.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2652778Z Transforming istack-commons-runtime-3.0.8.jar (com.sun.istack:istack-commons-runtime:3.0.8) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2654394Z Transforming FastInfoset-1.2.16.jar (com.sun.xml.fastinfoset:FastInfoset:1.2.16) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2656064Z Transforming jakarta.activation-api-1.2.1.jar (jakarta.activation:jakarta.activation-api:1.2.1) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2657762Z Transforming auto-value-annotations-1.6.2.jar (com.google.auto.value:auto-value-annotations:1.6.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2659455Z Transforming error_prone_annotations-2.18.0.jar (com.google.errorprone:error_prone_annotations:2.18.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2660902Z Transforming jose4j-0.7.0.jar (org.bitbucket.b_c:jose4j:0.7.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2662326Z Transforming slf4j-api-1.7.30.jar (org.slf4j:slf4j-api:1.7.30) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2663488Z Transforming jdom2-2.0.6.jar (org.jdom:jdom2:2.0.6) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2664689Z Transforming jsr305-3.0.2.jar (com.google.code.findbugs:jsr305:3.0.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2666134Z Transforming j2objc-annotations-2.8.jar (com.google.j2objc:j2objc-annotations:2.8) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2667616Z Transforming annotations-4.1.1.4.jar (com.google.android:annotations:4.1.1.4) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2669208Z Transforming animal-sniffer-annotations-1.23.jar (org.codehaus.mojo:animal-sniffer-annotations:1.23) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2670796Z Transforming perfmark-api-0.26.0.jar (io.perfmark:perfmark-api:0.26.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2702737Z Transforming netty-codec-http2-4.1.93.Final.jar (io.netty:netty-codec-http2:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2704348Z Transforming netty-handler-proxy-4.1.93.Final.jar (io.netty:netty-handler-proxy:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2706434Z Transforming netty-codec-http-4.1.93.Final.jar (io.netty:netty-codec-http:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2707939Z Transforming netty-handler-4.1.93.Final.jar (io.netty:netty-handler:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2709684Z Transforming netty-transport-native-unix-common-4.1.93.Final.jar (io.netty:netty-transport-native-unix-common:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2711610Z Transforming checker-qual-3.33.0.jar (org.checkerframework:checker-qual:3.33.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2713066Z Transforming commons-codec-1.11.jar (commons-codec:commons-codec:1.11) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2714435Z Transforming apksig-8.3.2.jar (com.android.tools.build:apksig:8.3.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2715764Z Transforming javawriter-2.5.0.jar (com.squareup:javawriter:2.5.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2717425Z Transforming kotlin-gradle-plugin-annotations-1.9.22.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-annotations:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2719531Z Transforming kotlin-project-model-1.9.22.jar (org.jetbrains.kotlin:kotlin-project-model:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2721430Z Transforming kotlin-tooling-core-1.9.22.jar (org.jetbrains.kotlin:kotlin-tooling-core:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2722986Z Transforming kotlin-util-io-1.9.22.jar (org.jetbrains.kotlin:kotlin-util-io:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2724621Z Transforming kotlin-daemon-embeddable-1.9.22.jar (org.jetbrains.kotlin:kotlin-daemon-embeddable:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2726360Z Transforming kotlin-daemon-client-1.9.22.jar (org.jetbrains.kotlin:kotlin-daemon-client:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2728173Z Transforming kotlinx-coroutines-core-jvm-1.5.0.jar (org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2729949Z Transforming kotlin-scripting-jvm-1.9.22.jar (org.jetbrains.kotlin:kotlin-scripting-jvm:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2762089Z Transforming kotlin-scripting-common-1.9.22.jar (org.jetbrains.kotlin:kotlin-scripting-common:1.9.22) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2763706Z Transforming failureaccess-1.0.1.jar (com.google.guava:failureaccess:1.0.1) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2765681Z Transforming listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar (com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2767637Z Transforming commons-logging-1.2.jar (commons-logging:commons-logging:1.2) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2768935Z Transforming jna-5.6.0.jar (net.java.dev.jna:jna:5.6.0) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2770250Z Transforming netty-codec-socks-4.1.93.Final.jar (io.netty:netty-codec-socks:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2771860Z Transforming netty-codec-4.1.93.Final.jar (io.netty:netty-codec:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2773319Z Transforming netty-transport-4.1.93.Final.jar (io.netty:netty-transport:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2775087Z Transforming netty-buffer-4.1.93.Final.jar (io.netty:netty-buffer:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2776700Z Transforming netty-resolver-4.1.93.Final.jar (io.netty:netty-resolver:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:42.2778135Z Transforming netty-common-4.1.93.Final.jar (io.netty:netty-common:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+build	UNKNOWN STEP	2025-09-21T08:42:44.2154415Z 
+build	UNKNOWN STEP	2025-09-21T08:42:44.2172215Z > Configure project :app
+build	UNKNOWN STEP	2025-09-21T08:42:44.2183308Z Evaluating project ':app' using build file '/home/runner/work/cyber-security-app/cyber-security-app/app/build.gradle'.
+build	UNKNOWN STEP	2025-09-21T08:42:44.2187890Z Using default execution profile
+build	UNKNOWN STEP	2025-09-21T08:42:44.2192468Z Using Kotlin Gradle Plugin gradle82 variant
+build	UNKNOWN STEP	2025-09-21T08:42:45.2149712Z All projects evaluated.
+build	UNKNOWN STEP	2025-09-21T08:42:45.3150151Z Task name matched 'lint'
+build	UNKNOWN STEP	2025-09-21T08:42:45.3152545Z Selected primary task 'lint' from project :
+build	UNKNOWN STEP	2025-09-21T08:42:46.3157040Z Tasks to be executed: [task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:preBuild', task ':app:preDebugBuild', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:bundleDebugClassesToCompileJar', task ':app:preDebugAndroidTestBuild', task ':app:generateDebugAndroidTestResValues', task ':app:generateDebugAndroidTestLintModel', task ':app:extractProguardFiles', task ':app:generateDebugLintReportModel', task ':app:preDebugUnitTestBuild', task ':app:generateDebugUnitTestLintModel', task ':app:lintAnalyzeDebug', task ':app:lintAnalyzeDebugAndroidTest', task ':app:lintAnalyzeDebugUnitTest', task ':app:lintReportDebug', task ':app:lintDebug', task ':app:lint']
+build	UNKNOWN STEP	2025-09-21T08:42:46.3169313Z Tasks that were excluded: []
+build	UNKNOWN STEP	2025-09-21T08:42:46.3170151Z Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4150650Z :app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4152972Z 
+build	UNKNOWN STEP	2025-09-21T08:42:46.4162450Z > Task :app:checkKotlinGradlePluginConfigurationErrors
+build	UNKNOWN STEP	2025-09-21T08:42:46.4163853Z Caching disabled for task ':app:checkKotlinGradlePluginConfigurationErrors' because:
+build	UNKNOWN STEP	2025-09-21T08:42:46.4165472Z   Build cache is disabled
+build	UNKNOWN STEP	2025-09-21T08:42:46.4166373Z Task ':app:checkKotlinGradlePluginConfigurationErrors' is not up-to-date because:
+build	UNKNOWN STEP	2025-09-21T08:42:46.4167276Z   Task has not declared any outputs despite executing actions.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4168000Z Resolve mutations for :app:preBuild (Thread[Execution worker,5,main]) started.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4168759Z :app:preBuild (Thread[Execution worker,5,main]) started.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4169096Z 
+build	UNKNOWN STEP	2025-09-21T08:42:46.4169248Z > Task :app:preBuild UP-TO-DATE
+build	UNKNOWN STEP	2025-09-21T08:42:46.4169687Z Skipping task ':app:preBuild' as it has no actions.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4170360Z Resolve mutations for :app:preDebugBuild (Thread[Execution worker,5,main]) started.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4171292Z :app:preDebugBuild (Thread[included builds,5,main]) started.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4171664Z 
+build	UNKNOWN STEP	2025-09-21T08:42:46.4171808Z > Task :app:preDebugBuild UP-TO-DATE
+build	UNKNOWN STEP	2025-09-21T08:42:46.4172261Z Skipping task ':app:preDebugBuild' as it has no actions.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4172954Z Resolve mutations for :app:checkDebugAarMetadata (Thread[Execution worker,5,main]) started.
+build	UNKNOWN STEP	2025-09-21T08:42:46.4173734Z :app:checkDebugAarMetadata (Thread[Execution worker,5,main]) started.
+build	UNKNOWN STEP	2025-09-21T08:42:48.4149216Z 
+build	UNKNOWN STEP	2025-09-21T08:42:48.4149771Z > Task :app:checkDebugAarMetadata
+build	UNKNOWN STEP	2025-09-21T08:42:48.4151372Z Downloading https://dl.google.com/dl/android/maven2/androidx/appcompat/appcompat/1.7.0/appcompat-1.7.0.pom to /home/runner/.gradle/.tmp/gradle_download8112908714348596760bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4153624Z Downloading https://dl.google.com/dl/android/maven2/com/google/android/material/material/1.12.0/material-1.12.0.pom to /home/runner/.gradle/.tmp/gradle_download15110832591911573734bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4154993Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.22/kotlin-stdlib-1.9.22.pom]
+build	UNKNOWN STEP	2025-09-21T08:42:48.4156183Z Downloading https://dl.google.com/dl/android/maven2/androidx/core/core-ktx/1.13.1/core-ktx-1.13.1.pom to /home/runner/.gradle/.tmp/gradle_download880946959956532357bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4157482Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.22/kotlin-stdlib-1.9.22.pom to /home/runner/.gradle/.tmp/gradle_download4575740209540427030bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4158886Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.22/kotlin-stdlib-1.9.22.module to /home/runner/.gradle/.tmp/gradle_download12156883876803658982bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4159979Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-bom/1.8.22/kotlin-bom-1.8.22.pom]
+build	UNKNOWN STEP	2025-09-21T08:42:48.4161115Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-bom/1.8.22/kotlin-bom-1.8.22.pom to /home/runner/.gradle/.tmp/gradle_download4243433541207132190bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4162317Z Downloading https://dl.google.com/dl/android/maven2/com/google/android/material/material/1.12.0/material-1.12.0.module to /home/runner/.gradle/.tmp/gradle_download11325345881524699540bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4163518Z Downloading https://dl.google.com/dl/android/maven2/androidx/appcompat/appcompat/1.7.0/appcompat-1.7.0.module to /home/runner/.gradle/.tmp/gradle_download14130429909527156326bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4164652Z Downloading https://dl.google.com/dl/android/maven2/androidx/core/core-ktx/1.13.1/core-ktx-1.13.1.module to /home/runner/.gradle/.tmp/gradle_download9970643766660238143bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4165596Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom]
+build	UNKNOWN STEP	2025-09-21T08:42:48.4166502Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom to /home/runner/.gradle/.tmp/gradle_download629448358141249916bin
+build	UNKNOWN STEP	2025-09-21T08:42:48.4167601Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.1.0/annotation-1.1.0.pom to /home/runner/.gradle/.tmp/gradle_download13204527021422045940bin
+build	UNKNOWN STEP	2025-09-21T08:42:49.0148988Z Downloading https://dl.google.com/dl/android/maven2/androidx/core/core/1.13.1/core-1.13.1.pom to /home/runner/.gradle/.tmp/gradle_download13075558682554426398bin
+build	UNKNOWN STEP	2025-09-21T08:42:49.3149428Z Downloading https://dl.google.com/dl/android/maven2/androidx/core/core/1.13.1/core-1.13.1.module to /home/runner/.gradle/.tmp/gradle_download16606800492141454915bin
+build	UNKNOWN STEP	2025-09-21T08:42:50.1149501Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.3.0/annotation-1.3.0.pom to /home/runner/.gradle/.tmp/gradle_download9099583886212504766bin
+build	UNKNOWN STEP	2025-09-21T08:42:50.4149796Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.3.0/annotation-1.3.0.module to /home/runner/.gradle/.tmp/gradle_download119366171960861424bin
+build	UNKNOWN STEP	2025-09-21T08:42:50.6150213Z Downloading https://dl.google.com/dl/android/maven2/androidx/appcompat/appcompat-resources/1.7.0/appcompat-resources-1.7.0.pom to /home/runner/.gradle/.tmp/gradle_download16201182107230492866bin
+build	UNKNOWN STEP	2025-09-21T08:42:50.6152642Z Downloading https://dl.google.com/dl/android/maven2/androidx/collection/collection/1.0.0/collection-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download2860178961651534552bin
+build	UNKNOWN STEP	2025-09-21T08:42:50.6154826Z Downloading https://dl.google.com/dl/android/maven2/androidx/activity/activity/1.7.0/activity-1.7.0.pom to /home/runner/.gradle/.tmp/gradle_download14046205861741969691bin
+build	UNKNOWN STEP	2025-09-21T08:42:50.8150199Z Downloading https://dl.google.com/dl/android/maven2/androidx/appcompat/appcompat-resources/1.7.0/appcompat-resources-1.7.0.module to /home/runner/.gradle/.tmp/gradle_download4275525953536215015bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.0149826Z Downloading https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2/1.3.0/emoji2-1.3.0.pom to /home/runner/.gradle/.tmp/gradle_download17298829416547896685bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.1149303Z Downloading https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2/1.3.0/emoji2-1.3.0.module to /home/runner/.gradle/.tmp/gradle_download11855713153769234731bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.2150389Z Downloading https://dl.google.com/dl/android/maven2/androidx/cursoradapter/cursoradapter/1.0.0/cursoradapter-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download18073205266580739684bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.4149890Z Downloading https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2-views-helper/1.2.0/emoji2-views-helper-1.2.0.pom to /home/runner/.gradle/.tmp/gradle_download3773649785232145595bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.4151798Z Downloading https://dl.google.com/dl/android/maven2/androidx/activity/activity/1.7.0/activity-1.7.0.module to /home/runner/.gradle/.tmp/gradle_download4737079682822104853bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.5149458Z Downloading https://dl.google.com/dl/android/maven2/androidx/fragment/fragment/1.5.4/fragment-1.5.4.pom to /home/runner/.gradle/.tmp/gradle_download8530542952139204361bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.5151720Z Downloading https://dl.google.com/dl/android/maven2/androidx/drawerlayout/drawerlayout/1.0.0/drawerlayout-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download12032218369277068441bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.5153850Z Downloading https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2-views-helper/1.2.0/emoji2-views-helper-1.2.0.module to /home/runner/.gradle/.tmp/gradle_download16262281043357895921bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.7149599Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel/2.6.1/lifecycle-viewmodel-2.6.1.pom to /home/runner/.gradle/.tmp/gradle_download15052564169674508053bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.7151939Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime/2.6.1/lifecycle-runtime-2.6.1.pom to /home/runner/.gradle/.tmp/gradle_download7020357313837356590bin
+build	UNKNOWN STEP	2025-09-21T08:42:51.7153682Z Downloading https://dl.google.com/dl/android/maven2/androidx/profileinstaller/profileinstaller/1.3.1/profileinstaller-1.3.1.pom to /home/runner/.gradle/.tmp/gradle_download869512322486508687bin
+build	UNKNOWN STEP	2025-09-21T08:42:52.0150086Z Downloading https://dl.google.com/dl/android/maven2/androidx/profileinstaller/profileinstaller/1.3.1/profileinstaller-1.3.1.module to /home/runner/.gradle/.tmp/gradle_download10196312992071935475bin
+build	UNKNOWN STEP	2025-09-21T08:42:52.2149868Z Downloading https://dl.google.com/dl/android/maven2/androidx/resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1.pom to /home/runner/.gradle/.tmp/gradle_download12372379108360241813bin
+build	UNKNOWN STEP	2025-09-21T08:42:52.2151691Z Downloading https://dl.google.com/dl/android/maven2/androidx/fragment/fragment/1.5.4/fragment-1.5.4.module to /home/runner/.gradle/.tmp/gradle_download11021188154509970251bin
+build	UNKNOWN STEP	2025-09-21T08:42:52.4150817Z Downloading https://dl.google.com/dl/android/maven2/androidx/resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1.module to /home/runner/.gradle/.tmp/gradle_download502078282683840855bin
+build	UNKNOWN STEP	2025-09-21T08:42:52.5150269Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime/2.6.1/lifecycle-runtime-2.6.1.module to /home/runner/.gradle/.tmp/gradle_download12405713747988817624bin
+build	UNKNOWN STEP	2025-09-21T08:42:52.6149826Z Downloading https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate/1.2.1/savedstate-1.2.1.pom to /home/runner/.gradle/.tmp/gradle_download12940112163436539367bin
+build	UNKNOWN STEP	2025-09-21T08:42:52.6152450Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel/2.6.1/lifecycle-viewmodel-2.6.1.module to /home/runner/.gradle/.tmp/gradle_download16555362812741506564bin
+build	UNKNOWN STEP	2025-09-21T08:42:53.3149557Z Downloading https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate/1.2.1/savedstate-1.2.1.module to /home/runner/.gradle/.tmp/gradle_download17353767301361082371bin
+build	UNKNOWN STEP	2025-09-21T08:42:53.7150063Z Downloading https://dl.google.com/dl/android/maven2/androidx/activity/activity/1.8.0/activity-1.8.0.pom to /home/runner/.gradle/.tmp/gradle_download16190896000085045549bin
+build	UNKNOWN STEP	2025-09-21T08:42:54.4149424Z Downloading https://dl.google.com/dl/android/maven2/androidx/activity/activity/1.8.0/activity-1.8.0.module to /home/runner/.gradle/.tmp/gradle_download17130322988610945846bin
+build	UNKNOWN STEP	2025-09-21T08:42:54.8149418Z Downloading https://dl.google.com/dl/android/maven2/androidx/drawerlayout/drawerlayout/1.1.1/drawerlayout-1.1.1.pom to /home/runner/.gradle/.tmp/gradle_download2703076504524665202bin
+build	UNKNOWN STEP	2025-09-21T08:42:55.0149212Z Downloading https://dl.google.com/dl/android/maven2/androidx/cardview/cardview/1.0.0/cardview-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download16827624937421514067bin
+build	UNKNOWN STEP	2025-09-21T08:42:55.0150531Z Downloading https://dl.google.com/dl/android/maven2/androidx/coordinatorlayout/coordinatorlayout/1.1.0/coordinatorlayout-1.1.0.pom to /home/runner/.gradle/.tmp/gradle_download6145457121995316561bin
+build	UNKNOWN STEP	2025-09-21T08:42:55.1148969Z Downloading https://dl.google.com/dl/android/maven2/androidx/constraintlayout/constraintlayout/2.0.1/constraintlayout-2.0.1.pom to /home/runner/.gradle/.tmp/gradle_download7242638407255806938bin
+build	UNKNOWN STEP	2025-09-21T08:42:55.5150720Z Downloading https://dl.google.com/dl/android/maven2/androidx/recyclerview/recyclerview/1.0.0/recyclerview-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download11153694774583464832bin
+build	UNKNOWN STEP	2025-09-21T08:42:55.6149899Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/com/google/errorprone/error_prone_annotations/2.15.0/error_prone_annotations-2.15.0.pom]
+build	UNKNOWN STEP	2025-09-21T08:42:55.6151794Z Downloading https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.15.0/error_prone_annotations-2.15.0.pom to /home/runner/.gradle/.tmp/gradle_download14213631558705966254bin
+build	UNKNOWN STEP	2025-09-21T08:42:55.7149380Z Downloading https://dl.google.com/dl/android/maven2/androidx/transition/transition/1.5.0/transition-1.5.0.pom to /home/runner/.gradle/.tmp/gradle_download5357226964469680828bin
+build	UNKNOWN STEP	2025-09-21T08:42:55.9150421Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-experimental/1.0.0/annotation-experimental-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download12789247680796229359bin
+build	UNKNOWN STEP	2025-09-21T08:42:55.9152275Z Downloading https://dl.google.com/dl/android/maven2/androidx/dynamicanimation/dynamicanimation/1.0.0/dynamicanimation-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download9336687994045977477bin
+build	UNKNOWN STEP	2025-09-21T08:42:56.0151297Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/com/google/errorprone/error_prone_parent/2.15.0/error_prone_parent-2.15.0.pom]
+build	UNKNOWN STEP	2025-09-21T08:42:56.0154572Z Downloading https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.15.0/error_prone_parent-2.15.0.pom to /home/runner/.gradle/.tmp/gradle_download6284510359326286049bin
+build	UNKNOWN STEP	2025-09-21T08:42:56.1149963Z Downloading https://dl.google.com/dl/android/maven2/androidx/transition/transition/1.5.0/transition-1.5.0.module to /home/runner/.gradle/.tmp/gradle_download5707106462612070806bin
+build	UNKNOWN STEP	2025-09-21T08:42:56.1152977Z Downloading https://dl.google.com/dl/android/maven2/androidx/vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0.pom to /home/runner/.gradle/.tmp/gradle_download17525323901830922568bin
+build	UNKNOWN STEP	2025-09-21T08:42:56.1154681Z Downloading https://dl.google.com/dl/android/maven2/androidx/viewpager2/viewpager2/1.0.0/viewpager2-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download5156278076921211574bin
+build	UNKNOWN STEP	2025-09-21T08:42:57.0150793Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.6.0/annotation-1.6.0.pom to /home/runner/.gradle/.tmp/gradle_download8812426789571704036bin
+build	UNKNOWN STEP	2025-09-21T08:42:57.2152228Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.6.0/annotation-1.6.0.module to /home/runner/.gradle/.tmp/gradle_download2188084177054850250bin
+build	UNKNOWN STEP	2025-09-21T08:42:58.1150443Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-experimental/1.4.0/annotation-experimental-1.4.0.pom to /home/runner/.gradle/.tmp/gradle_download18285676938991821684bin
+build	UNKNOWN STEP	2025-09-21T08:42:58.3150580Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-experimental/1.4.0/annotation-experimental-1.4.0.module to /home/runner/.gradle/.tmp/gradle_download1482341009854089683bin
+build	UNKNOWN STEP	2025-09-21T08:42:59.1150245Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime/2.6.2/lifecycle-runtime-2.6.2.pom to /home/runner/.gradle/.tmp/gradle_download9539165593280044649bin
+build	UNKNOWN STEP	2025-09-21T08:42:59.3149483Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime/2.6.2/lifecycle-runtime-2.6.2.module to /home/runner/.gradle/.tmp/gradle_download13194126852656200290bin
+build	UNKNOWN STEP	2025-09-21T08:42:59.5149544Z Downloading https://dl.google.com/dl/android/maven2/androidx/versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1.pom to /home/runner/.gradle/.tmp/gradle_download69753600576804207bin
+build	UNKNOWN STEP	2025-09-21T08:42:59.6150335Z Downloading https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures/1.0.0/concurrent-futures-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download16978313202770253766bin
+build	UNKNOWN STEP	2025-09-21T08:43:00.2149980Z Downloading https://dl.google.com/dl/android/maven2/androidx/interpolator/interpolator/1.0.0/interpolator-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download4056165294647198468bin
+build	UNKNOWN STEP	2025-09-21T08:43:00.4150499Z Downloading https://dl.google.com/dl/android/maven2/androidx/vectordrawable/vectordrawable-animated/1.1.0/vectordrawable-animated-1.1.0.pom to /home/runner/.gradle/.tmp/gradle_download14088641709373129256bin
+build	UNKNOWN STEP	2025-09-21T08:43:01.3149855Z Downloading https://dl.google.com/dl/android/maven2/androidx/collection/collection/1.1.0/collection-1.1.0.pom to /home/runner/.gradle/.tmp/gradle_download12711038716269050439bin
+build	UNKNOWN STEP	2025-09-21T08:43:01.5148720Z Downloading https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2-views-helper/1.3.0/emoji2-views-helper-1.3.0.pom to /home/runner/.gradle/.tmp/gradle_download1952124261768810542bin
+build	UNKNOWN STEP	2025-09-21T08:43:01.9150182Z Downloading https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2-views-helper/1.3.0/emoji2-views-helper-1.3.0.module to /home/runner/.gradle/.tmp/gradle_download16551869258545108667bin
+build	UNKNOWN STEP	2025-09-21T08:43:02.1149614Z Downloading https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.0.0/startup-runtime-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download4870306859942672982bin
+build	UNKNOWN STEP	2025-09-21T08:43:02.3150149Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-process/2.4.1/lifecycle-process-2.4.1.pom to /home/runner/.gradle/.tmp/gradle_download12670078475909691930bin
+build	UNKNOWN STEP	2025-09-21T08:43:02.3151968Z Downloading https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.0.0/startup-runtime-1.0.0.module to /home/runner/.gradle/.tmp/gradle_download8900554599911170796bin
+build	UNKNOWN STEP	2025-09-21T08:43:02.5150503Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-process/2.4.1/lifecycle-process-2.4.1.module to /home/runner/.gradle/.tmp/gradle_download2721342347844230431bin
+build	UNKNOWN STEP	2025-09-21T08:43:02.7149509Z Downloading https://dl.google.com/dl/android/maven2/androidx/loader/loader/1.0.0/loader-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download18199101189908001994bin
+build	UNKNOWN STEP	2025-09-21T08:43:02.7151689Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core/2.5.1/lifecycle-livedata-core-2.5.1.pom to /home/runner/.gradle/.tmp/gradle_download11826916635308128344bin
+build	UNKNOWN STEP	2025-09-21T08:43:02.7153685Z Downloading https://dl.google.com/dl/android/maven2/androidx/viewpager/viewpager/1.0.0/viewpager-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download8037891411081632265bin
+build	UNKNOWN STEP	2025-09-21T08:43:02.7155112Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.5.1/lifecycle-viewmodel-savedstate-2.5.1.pom to /home/runner/.gradle/.tmp/gradle_download3482746036032231129bin
+build	UNKNOWN STEP	2025-09-21T08:43:02.9149641Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core/2.5.1/lifecycle-livedata-core-2.5.1.module to /home/runner/.gradle/.tmp/gradle_download15732022216093098272bin
+build	UNKNOWN STEP	2025-09-21T08:43:03.5150104Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.5.1/lifecycle-viewmodel-savedstate-2.5.1.module to /home/runner/.gradle/.tmp/gradle_download1272518367123664273bin
+build	UNKNOWN STEP	2025-09-21T08:43:03.8148918Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core/2.6.1/lifecycle-livedata-core-2.6.1.pom to /home/runner/.gradle/.tmp/gradle_download12463409548020544913bin
+build	UNKNOWN STEP	2025-09-21T08:43:04.6149387Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core/2.6.1/lifecycle-livedata-core-2.6.1.module to /home/runner/.gradle/.tmp/gradle_download17353568225071388429bin
+build	UNKNOWN STEP	2025-09-21T08:43:04.8149778Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-process/2.6.1/lifecycle-process-2.6.1.pom to /home/runner/.gradle/.tmp/gradle_download7326833379011741387bin
+build	UNKNOWN STEP	2025-09-21T08:43:05.6149671Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-process/2.6.1/lifecycle-process-2.6.1.module to /home/runner/.gradle/.tmp/gradle_download3611025590064393218bin
+build	UNKNOWN STEP	2025-09-21T08:43:05.9148526Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.6.1/lifecycle-viewmodel-savedstate-2.6.1.pom to /home/runner/.gradle/.tmp/gradle_download417961495148260702bin
+build	UNKNOWN STEP	2025-09-21T08:43:06.7150231Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.6.1/lifecycle-viewmodel-savedstate-2.6.1.module to /home/runner/.gradle/.tmp/gradle_download10674477328175235438bin
+build	UNKNOWN STEP	2025-09-21T08:43:07.1149212Z Downloading https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0.pom to /home/runner/.gradle/.tmp/gradle_download3294552156799869266bin
+build	UNKNOWN STEP	2025-09-21T08:43:07.7148936Z Downloading https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0.module to /home/runner/.gradle/.tmp/gradle_download8841811920247291754bin
+build	UNKNOWN STEP	2025-09-21T08:43:08.2148656Z Downloading https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.1.1/startup-runtime-1.1.1.pom to /home/runner/.gradle/.tmp/gradle_download5265699693738797134bin
+build	UNKNOWN STEP	2025-09-21T08:43:08.8149466Z Downloading https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.1.1/startup-runtime-1.1.1.module to /home/runner/.gradle/.tmp/gradle_download5431732939486765387bin
+build	UNKNOWN STEP	2025-09-21T08:43:09.3150247Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0.pom]
+build	UNKNOWN STEP	2025-09-21T08:43:09.3152610Z Downloading https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0.pom to /home/runner/.gradle/.tmp/gradle_download8972142302929090198bin
+build	UNKNOWN STEP	2025-09-21T08:43:09.9148871Z Downloading https://dl.google.com/dl/android/maven2/androidx/arch/core/core-common/2.1.0/core-common-2.1.0.pom to /home/runner/.gradle/.tmp/gradle_download11264445706694567723bin
+build	UNKNOWN STEP	2025-09-21T08:43:10.4149519Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common/2.6.1/lifecycle-common-2.6.1.pom to /home/runner/.gradle/.tmp/gradle_download13104805310535908575bin
+build	UNKNOWN STEP	2025-09-21T08:43:11.0149474Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common/2.6.1/lifecycle-common-2.6.1.module to /home/runner/.gradle/.tmp/gradle_download2249077836128149448bin
+build	UNKNOWN STEP	2025-09-21T08:43:11.5149089Z Downloading https://dl.google.com/dl/android/maven2/androidx/tracing/tracing/1.0.0/tracing-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download7979773745233035492bin
+build	UNKNOWN STEP	2025-09-21T08:43:12.0148565Z Downloading https://dl.google.com/dl/android/maven2/androidx/tracing/tracing/1.0.0/tracing-1.0.0.module to /home/runner/.gradle/.tmp/gradle_download307292343501580470bin
+build	UNKNOWN STEP	2025-09-21T08:43:12.5148223Z Downloading https://dl.google.com/dl/android/maven2/androidx/customview/customview/1.1.0/customview-1.1.0.pom to /home/runner/.gradle/.tmp/gradle_download11512164591197022312bin
+build	UNKNOWN STEP	2025-09-21T08:43:12.9149109Z Downloading https://dl.google.com/dl/android/maven2/androidx/constraintlayout/constraintlayout-solver/2.0.1/constraintlayout-solver-2.0.1.pom to /home/runner/.gradle/.tmp/gradle_download11732450053522752380bin
+build	UNKNOWN STEP	2025-09-21T08:43:13.1148554Z Downloading https://dl.google.com/dl/android/maven2/androidx/legacy/legacy-support-core-utils/1.0.0/legacy-support-core-utils-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download927098821204611936bin
+build	UNKNOWN STEP	2025-09-21T08:43:13.3149718Z Downloading https://dl.google.com/dl/android/maven2/androidx/legacy/legacy-support-core-ui/1.0.0/legacy-support-core-ui-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download10667731175991868967bin
+build	UNKNOWN STEP	2025-09-21T08:43:13.5150346Z Downloading https://dl.google.com/dl/android/maven2/androidx/recyclerview/recyclerview/1.1.0/recyclerview-1.1.0.pom to /home/runner/.gradle/.tmp/gradle_download8182853193165343777bin
+build	UNKNOWN STEP	2025-09-21T08:43:13.8150321Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-jvm/1.6.0/annotation-jvm-1.6.0.pom to /home/runner/.gradle/.tmp/gradle_download1729894172664319183bin
+build	UNKNOWN STEP	2025-09-21T08:43:14.0150157Z Downloading https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-jvm/1.6.0/annotation-jvm-1.6.0.module to /home/runner/.gradle/.tmp/gradle_download7853830882437925241bin
+build	UNKNOWN STEP	2025-09-21T08:43:14.2148855Z Downloading https://dl.google.com/dl/android/maven2/androidx/arch/core/core-common/2.2.0/core-common-2.2.0.pom to /home/runner/.gradle/.tmp/gradle_download4492414295898753942bin
+build	UNKNOWN STEP	2025-09-21T08:43:14.5149145Z Downloading https://dl.google.com/dl/android/maven2/androidx/arch/core/core-common/2.2.0/core-common-2.2.0.module to /home/runner/.gradle/.tmp/gradle_download6775901155194334845bin
+build	UNKNOWN STEP	2025-09-21T08:43:14.7149419Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common/2.6.2/lifecycle-common-2.6.2.pom to /home/runner/.gradle/.tmp/gradle_download16053157189281234508bin
+build	UNKNOWN STEP	2025-09-21T08:43:14.8149225Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common/2.6.2/lifecycle-common-2.6.2.module to /home/runner/.gradle/.tmp/gradle_download16438952161692406371bin
+build	UNKNOWN STEP	2025-09-21T08:43:15.0149063Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core/2.6.2/lifecycle-livedata-core-2.6.2.pom to /home/runner/.gradle/.tmp/gradle_download6054187455789386080bin
+build	UNKNOWN STEP	2025-09-21T08:43:15.2149216Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core/2.6.2/lifecycle-livedata-core-2.6.2.module to /home/runner/.gradle/.tmp/gradle_download16716264024785317760bin
+build	UNKNOWN STEP	2025-09-21T08:43:15.5150154Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-process/2.6.2/lifecycle-process-2.6.2.pom to /home/runner/.gradle/.tmp/gradle_download10711872143295012564bin
+build	UNKNOWN STEP	2025-09-21T08:43:15.6149380Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-process/2.6.2/lifecycle-process-2.6.2.module to /home/runner/.gradle/.tmp/gradle_download1435207432888808195bin
+build	UNKNOWN STEP	2025-09-21T08:43:15.8149279Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel/2.6.2/lifecycle-viewmodel-2.6.2.pom to /home/runner/.gradle/.tmp/gradle_download10980395031867613182bin
+build	UNKNOWN STEP	2025-09-21T08:43:16.1149659Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel/2.6.2/lifecycle-viewmodel-2.6.2.module to /home/runner/.gradle/.tmp/gradle_download4738194971129553972bin
+build	UNKNOWN STEP	2025-09-21T08:43:16.2148162Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.6.2/lifecycle-viewmodel-savedstate-2.6.2.pom to /home/runner/.gradle/.tmp/gradle_download541111616893699107bin
+build	UNKNOWN STEP	2025-09-21T08:43:16.4148667Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.6.2/lifecycle-viewmodel-savedstate-2.6.2.module to /home/runner/.gradle/.tmp/gradle_download12246540442579014933bin
+build	UNKNOWN STEP	2025-09-21T08:43:16.6148879Z Downloading https://dl.google.com/dl/android/maven2/androidx/arch/core/core-runtime/2.2.0/core-runtime-2.2.0.pom to /home/runner/.gradle/.tmp/gradle_download4619615814692351931bin
+build	UNKNOWN STEP	2025-09-21T08:43:16.8148847Z Downloading https://dl.google.com/dl/android/maven2/androidx/arch/core/core-runtime/2.2.0/core-runtime-2.2.0.module to /home/runner/.gradle/.tmp/gradle_download1512264525338054566bin
+build	UNKNOWN STEP	2025-09-21T08:43:17.0148305Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2.pom to /home/runner/.gradle/.tmp/gradle_download11673932355875466498bin
+build	UNKNOWN STEP	2025-09-21T08:43:17.2149362Z Downloading https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2.module to /home/runner/.gradle/.tmp/gradle_download7498037067794377469bin
+build	UNKNOWN STEP	2025-09-21T08:43:17.4149436Z Downloading https://dl.google.com/dl/android/maven2/androidx/localbroadcastmanager/localbroadcastmanager/1.0.0/localbroadcastmanager-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download6509592014351729166bin
+build	UNKNOWN STEP	2025-09-21T08:43:17.4151563Z Downloading https://dl.google.com/dl/android/maven2/androidx/print/print/1.0.0/print-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download2881519289397651112bin
+build	UNKNOWN STEP	2025-09-21T08:43:17.4153317Z Downloading https://dl.google.com/dl/android/maven2/androidx/documentfile/documentfile/1.0.0/documentfile-1.0.0.pom to /home/runner/.gradle/.tmp/gradle_download9293089532979842442bin
+build	UNKNOWN STEP	2025-09-21T08:43:18.3150202Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.6.4/kotlinx-coroutines-android-1.6.4.pom]
+build	UNKNOWN STEP	2025-09-21T08:43:18.3152389Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.6.4/kotlinx-coroutines-android-1.6.4.pom to /home/runner/.gradle/.tmp/gradle_download8308478808365438283bin
+build	UNKNOWN STEP	2025-09-21T08:43:18.5148985Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.6.4/kotlinx-coroutines-bom-1.6.4.pom]
+build	UNKNOWN STEP	2025-09-21T08:43:18.5150250Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.6.4/kotlinx-coroutines-bom-1.6.4.pom to /home/runner/.gradle/.tmp/gradle_download5804298305794724093bin
+build	UNKNOWN STEP	2025-09-21T08:43:18.5151806Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.6.4/kotlinx-coroutines-android-1.6.4.module to /home/runner/.gradle/.tmp/gradle_download5401220673486917040bin
+build	UNKNOWN STEP	2025-09-21T08:43:19.4148276Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.6.4/kotlinx-coroutines-core-1.6.4.pom]
+build	UNKNOWN STEP	2025-09-21T08:43:19.4150165Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.6.4/kotlinx-coroutines-core-1.6.4.pom to /home/runner/.gradle/.tmp/gradle_download7199735472793964934bin
+build	UNKNOWN STEP	2025-09-21T08:43:19.4152329Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.6.4/kotlinx-coroutines-core-1.6.4.module to /home/runner/.gradle/.tmp/gradle_download3829723042148444605bin
+build	UNKNOWN STEP	2025-09-21T08:43:19.6148497Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.pom]
+build	UNKNOWN STEP	2025-09-21T08:43:19.6150545Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.pom to /home/runner/.gradle/.tmp/gradle_download10021131687219659821bin
+build	UNKNOWN STEP	2025-09-21T08:43:20.5149007Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.pom]
+build	UNKNOWN STEP	2025-09-21T08:43:20.5150754Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.pom to /home/runner/.gradle/.tmp/gradle_download3448534220303562758bin
+build	UNKNOWN STEP	2025-09-21T08:43:20.5152691Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.module to /home/runner/.gradle/.tmp/gradle_download8845252862446419030bin
+build	UNKNOWN STEP	2025-09-21T08:43:20.7149284Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.pom]
+build	UNKNOWN STEP	2025-09-21T08:43:20.7151340Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.pom to /home/runner/.gradle/.tmp/gradle_download14861493737713605931bin
+build	UNKNOWN STEP	2025-09-21T08:43:21.6149607Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.22/kotlin-stdlib-common-1.8.22.pom]
+build	UNKNOWN STEP	2025-09-21T08:43:21.6151373Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.22/kotlin-stdlib-common-1.8.22.pom to /home/runner/.gradle/.tmp/gradle_download6823592147062888142bin
+build	UNKNOWN STEP	2025-09-21T08:43:21.9164054Z Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.22/kotlin-stdlib-common-1.9.22.pom]
+build	UNKNOWN STEP	2025-09-21T08:43:21.9166523Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.22/kotlin-stdlib-common-1.9.22.pom to /home/runner/.gradle/.tmp/gradle_download16935860704440471007bin
+build	UNKNOWN STEP	2025-09-21T08:43:21.9169978Z Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.22/kotlin-stdlib-common-1.9.22.module to /home/runner/.gradle/.tmp/gradle_download11569936983028269289bin
+build	UNKNOWN STEP	2025-09-21T08:43:21.9171389Z 
+build	UNKNOWN STEP	2025-09-21T08:43:21.9171588Z > Task :app:checkDebugAarMetadata FAILED
+build	UNKNOWN STEP	2025-09-21T08:43:22.0159425Z 
+build	UNKNOWN STEP	2025-09-21T08:43:22.0161453Z FAILURE: Build failed with an exception.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0161803Z 
+build	UNKNOWN STEP	2025-09-21T08:43:22.0161932Z * What went wrong:
+build	UNKNOWN STEP	2025-09-21T08:43:22.0162343Z Execution failed for task ':app:checkDebugAarMetadata'.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0163546Z > Configuration `:app:debugRuntimeClasspath` contains AndroidX dependencies, but the `android.useAndroidX` property is not enabled, which may cause runtime issues.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0164778Z   Set `android.useAndroidX=true` in the `gradle.properties` file and retry.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0165477Z   The following AndroidX dependencies are detected:
+build	UNKNOWN STEP	2025-09-21T08:43:22.0166108Z   :app:debugRuntimeClasspath -> androidx.core:core-ktx:1.13.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0167097Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.annotation:annotation:1.6.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0168595Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.annotation:annotation:1.6.0 -> androidx.annotation:annotation-jvm:1.6.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0170009Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.core:core:1.13.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0171480Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.annotation:annotation-experimental:1.4.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0173053Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.appcompat:appcompat-resources:1.7.0 -> androidx.collection:collection:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0174687Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.core:core:1.13.1 -> androidx.concurrent:concurrent-futures:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0177231Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.appcompat:appcompat-resources:1.7.0 -> androidx.vectordrawable:vectordrawable-animated:1.1.0 -> androidx.interpolator:interpolator:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0179189Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.lifecycle:lifecycle-runtime:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0180629Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.savedstate:savedstate:1.2.1 -> androidx.arch.core:core-common:2.2.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0182794Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.loader:loader:1.0.0 -> androidx.lifecycle:lifecycle-livedata:2.6.2 -> androidx.arch.core:core-runtime:2.2.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0184835Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.savedstate:savedstate:1.2.1 -> androidx.lifecycle:lifecycle-common:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0186595Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.loader:loader:1.0.0 -> androidx.lifecycle:lifecycle-livedata:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0188353Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.lifecycle:lifecycle-livedata-core:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0189874Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.emoji2:emoji2:1.3.0 -> androidx.lifecycle:lifecycle-process:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0191472Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.emoji2:emoji2:1.3.0 -> androidx.startup:startup-runtime:1.1.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0192910Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.activity:activity:1.8.0 -> androidx.tracing:tracing:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0194358Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.lifecycle:lifecycle-viewmodel:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0195949Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0197492Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.savedstate:savedstate:1.2.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0198788Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.profileinstaller:profileinstaller:1.3.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0200311Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.core:core:1.13.1 -> androidx.versionedparcelable:versionedparcelable:1.1.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0201771Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0202765Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.activity:activity:1.8.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0204061Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.appcompat:appcompat-resources:1.7.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0205431Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.vectordrawable:vectordrawable:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0207059Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.appcompat:appcompat-resources:1.7.0 -> androidx.vectordrawable:vectordrawable-animated:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0208609Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.cursoradapter:cursoradapter:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0209903Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.drawerlayout:drawerlayout:1.1.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0211672Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.drawerlayout:drawerlayout:1.1.1 -> androidx.customview:customview:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0241372Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.emoji2:emoji2:1.3.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0242877Z   :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.emoji2:emoji2-views-helper:1.3.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0244197Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4
+build	UNKNOWN STEP	2025-09-21T08:43:22.0245616Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.loader:loader:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0247219Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.viewpager:viewpager:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0248826Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.resourceinspection:resourceinspection-annotation:1.0.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0250078Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0251360Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.cardview:cardview:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0252726Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.coordinatorlayout:coordinatorlayout:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0254196Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.constraintlayout:constraintlayout:2.0.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0255922Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.constraintlayout:constraintlayout:2.0.1 -> androidx.constraintlayout:constraintlayout-solver:2.0.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0257642Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0259330Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0 -> androidx.legacy:legacy-support-core-utils:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0261757Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0 -> androidx.legacy:legacy-support-core-utils:1.0.0 -> androidx.documentfile:documentfile:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0264274Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0 -> androidx.legacy:legacy-support-core-utils:1.0.0 -> androidx.localbroadcastmanager:localbroadcastmanager:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0266748Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0 -> androidx.legacy:legacy-support-core-utils:1.0.0 -> androidx.print:print:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0268568Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.recyclerview:recyclerview:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0269883Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.transition:transition:1.5.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0271369Z   :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.viewpager2:viewpager2:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0272100Z 
+build	UNKNOWN STEP	2025-09-21T08:43:22.0272247Z * Try:
+build	UNKNOWN STEP	2025-09-21T08:43:22.0272618Z > Run with --debug option to get more log output.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0273129Z > Run with --scan to get full insights.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0273623Z > Get more help at https://help.gradle.org.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0273964Z 
+build	UNKNOWN STEP	2025-09-21T08:43:22.0274097Z * Exception is:
+build	UNKNOWN STEP	2025-09-21T08:43:22.0274808Z org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:checkDebugAarMetadata'.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0276173Z 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:38)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0277687Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0279098Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0280747Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0282691Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0284452Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0286022Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0287392Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0288771Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0290153Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0291675Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0293047Z 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0294447Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0295720Z 	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0297080Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0298704Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0300462Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0302229Z 	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0303761Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0305563Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0307054Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0308209Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0309424Z 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0310617Z 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0312643Z Caused by: com.android.builder.errors.EvalIssueException: Configuration `:app:debugRuntimeClasspath` contains AndroidX dependencies, but the `android.useAndroidX` property is not enabled, which may cause runtime issues.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0314264Z Set `android.useAndroidX=true` in the `gradle.properties` file and retry.
+build	UNKNOWN STEP	2025-09-21T08:43:22.0314923Z The following AndroidX dependencies are detected:
+build	UNKNOWN STEP	2025-09-21T08:43:22.0315526Z :app:debugRuntimeClasspath -> androidx.core:core-ktx:1.13.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0316474Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.annotation:annotation:1.6.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0317939Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.annotation:annotation:1.6.0 -> androidx.annotation:annotation-jvm:1.6.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0319294Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.core:core:1.13.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0320847Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.annotation:annotation-experimental:1.4.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0322826Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.appcompat:appcompat-resources:1.7.0 -> androidx.collection:collection:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0324620Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.core:core:1.13.1 -> androidx.concurrent:concurrent-futures:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0326649Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.appcompat:appcompat-resources:1.7.0 -> androidx.vectordrawable:vectordrawable-animated:1.1.0 -> androidx.interpolator:interpolator:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0328458Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.lifecycle:lifecycle-runtime:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0329877Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.savedstate:savedstate:1.2.1 -> androidx.arch.core:core-common:2.2.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0332059Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.loader:loader:1.0.0 -> androidx.lifecycle:lifecycle-livedata:2.6.2 -> androidx.arch.core:core-runtime:2.2.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0334067Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.savedstate:savedstate:1.2.1 -> androidx.lifecycle:lifecycle-common:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0335851Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.loader:loader:1.0.0 -> androidx.lifecycle:lifecycle-livedata:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0337702Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.lifecycle:lifecycle-livedata-core:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0339318Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.emoji2:emoji2:1.3.0 -> androidx.lifecycle:lifecycle-process:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0340847Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.emoji2:emoji2:1.3.0 -> androidx.startup:startup-runtime:1.1.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0342515Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.activity:activity:1.8.0 -> androidx.tracing:tracing:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0343901Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.lifecycle:lifecycle-viewmodel:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0345390Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2
+build	UNKNOWN STEP	2025-09-21T08:43:22.0346859Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.savedstate:savedstate:1.2.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0348073Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.profileinstaller:profileinstaller:1.3.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0349547Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.core:core:1.13.1 -> androidx.versionedparcelable:versionedparcelable:1.1.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0350759Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0351872Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.activity:activity:1.8.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0353085Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.appcompat:appcompat-resources:1.7.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0354413Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.vectordrawable:vectordrawable:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0355970Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.appcompat:appcompat-resources:1.7.0 -> androidx.vectordrawable:vectordrawable-animated:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0357472Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.cursoradapter:cursoradapter:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0358958Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.drawerlayout:drawerlayout:1.1.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0360593Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.drawerlayout:drawerlayout:1.1.1 -> androidx.customview:customview:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0362361Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.emoji2:emoji2:1.3.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0363500Z :app:debugRuntimeClasspath -> androidx.appcompat:appcompat:1.7.0 -> androidx.emoji2:emoji2-views-helper:1.3.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0364723Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4
+build	UNKNOWN STEP	2025-09-21T08:43:22.0366077Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.loader:loader:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0367659Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.fragment:fragment:1.5.4 -> androidx.viewpager:viewpager:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0369312Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.resourceinspection:resourceinspection-annotation:1.0.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0370531Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0371805Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.cardview:cardview:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0373109Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.coordinatorlayout:coordinatorlayout:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0374521Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.constraintlayout:constraintlayout:2.0.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0376218Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.constraintlayout:constraintlayout:2.0.1 -> androidx.constraintlayout:constraintlayout-solver:2.0.1
+build	UNKNOWN STEP	2025-09-21T08:43:22.0377921Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0379576Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0 -> androidx.legacy:legacy-support-core-utils:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0381933Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0 -> androidx.legacy:legacy-support-core-utils:1.0.0 -> androidx.documentfile:documentfile:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0384488Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0 -> androidx.legacy:legacy-support-core-utils:1.0.0 -> androidx.localbroadcastmanager:localbroadcastmanager:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0386996Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.dynamicanimation:dynamicanimation:1.0.0 -> androidx.legacy:legacy-support-core-utils:1.0.0 -> androidx.print:print:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0388795Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.recyclerview:recyclerview:1.1.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0390064Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.transition:transition:1.5.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0391484Z :app:debugRuntimeClasspath -> com.google.android.material:material:1.12.0 -> androidx.viewpager2:viewpager2:1.0.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.0392572Z 	at com.android.builder.errors.IssueReporter.reportError(IssueReporter.kt:114)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0393521Z 	at com.android.builder.errors.IssueReporter.reportError$default(IssueReporter.kt:110)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0394958Z 	at com.android.build.gradle.internal.dependency.AndroidXDependencyCheck$AndroidXDisabledJetifierDisabled.execute(AndroidXDependencyCheck.kt:72)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0396811Z 	at com.android.build.gradle.internal.dependency.AndroidXDependencyCheck$AndroidXDisabledJetifierDisabled.execute(AndroidXDependencyCheck.kt:40)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0398997Z 	at org.gradle.internal.code.DefaultUserCodeApplicationContext$CurrentApplication$1.execute(DefaultUserCodeApplicationContext.java:122)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0400518Z 	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:99)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0402113Z 	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:87)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0403352Z 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:43)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0404560Z 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:268)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0405731Z 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:170)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0406929Z 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:83)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0408155Z 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:69)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0409364Z 	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:381)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0410538Z 	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:272)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0411780Z 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:148)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0412765Z 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:37)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0414033Z 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0415128Z 	at jdk.proxy1/jdk.proxy1.$Proxy50.afterResolve(Unknown Source)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0416155Z 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:766)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0417550Z 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:739)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0419144Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0420928Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0422710Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0424110Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0425531Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0426916Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0428270Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0429626Z 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0431416Z 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveGraphInBuildOperation(DefaultConfiguration.java:739)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0433253Z 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.lambda$resolveExclusivelyIfRequired$6(DefaultConfiguration.java:731)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0435008Z 	at org.gradle.api.internal.project.DefaultProjectStateRegistry$CalculatedModelValueImpl.update(DefaultProjectStateRegistry.java:505)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0436779Z 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveExclusivelyIfRequired(DefaultConfiguration.java:723)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0438568Z 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveGraphIfRequired(DefaultConfiguration.java:716)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0440396Z 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.access$500(DefaultConfiguration.java:154)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0442508Z 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ResolverResultsResolutionResultProvider.getValue(DefaultConfiguration.java:690)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0444551Z 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ResolverResultsResolutionResultProvider.getValue(DefaultConfiguration.java:651)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0446316Z 	at org.gradle.api.internal.artifacts.configurations.ResolutionResultProvider$1.getValue(ResolutionResultProvider.java:53)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0448086Z 	at org.gradle.api.internal.artifacts.configurations.ResolutionBackedFileCollection.getSelectedArtifacts(ResolutionBackedFileCollection.java:95)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0450015Z 	at org.gradle.api.internal.artifacts.configurations.ResolutionBackedFileCollection.visitContents(ResolutionBackedFileCollection.java:73)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0451732Z 	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:361)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0453063Z 	at org.gradle.api.internal.file.CompositeFileCollection.lambda$visitContents$0(CompositeFileCollection.java:113)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0454381Z 	at org.gradle.api.internal.file.collections.UnpackingVisitor.add(UnpackingVisitor.java:67)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0455777Z 	at org.gradle.api.internal.file.collections.UnpackingVisitor.add(UnpackingVisitor.java:92)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0457241Z 	at org.gradle.api.internal.file.DefaultFileCollectionFactory$ResolvingFileCollection.visitChildren(DefaultFileCollectionFactory.java:285)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0458783Z 	at org.gradle.api.internal.file.CompositeFileCollection.visitContents(CompositeFileCollection.java:113)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0460096Z 	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:361)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0461763Z 	at org.gradle.api.internal.file.CompositeFileCollection.lambda$visitContents$0(CompositeFileCollection.java:113)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0463117Z 	at org.gradle.api.internal.tasks.PropertyFileCollection.visitChildren(PropertyFileCollection.java:48)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0464429Z 	at org.gradle.api.internal.file.CompositeFileCollection.visitContents(CompositeFileCollection.java:113)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0465721Z 	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:361)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0467199Z 	at org.gradle.internal.fingerprint.impl.DefaultFileCollectionSnapshotter.snapshot(DefaultFileCollectionSnapshotter.java:47)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0468952Z 	at org.gradle.internal.execution.impl.DefaultInputFingerprinter$InputCollectingVisitor.visitInputFileProperty(DefaultInputFingerprinter.java:133)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0470524Z 	at org.gradle.api.internal.tasks.execution.TaskExecution.visitRegularInputs(TaskExecution.java:324)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0472200Z 	at org.gradle.internal.execution.impl.DefaultInputFingerprinter.fingerprintInputProperties(DefaultInputFingerprinter.java:63)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0474292Z 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.captureExecutionStateWithOutputs(AbstractCaptureStateBeforeExecutionStep.java:109)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0476546Z 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.lambda$captureExecutionState$0(AbstractCaptureStateBeforeExecutionStep.java:74)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0478172Z 	at org.gradle.internal.execution.steps.BuildOperationStep$1.call(BuildOperationStep.java:37)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0479613Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0481779Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0483347Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0485115Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0486651Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0488038Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0489404Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0490756Z 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0492419Z 	at org.gradle.internal.execution.steps.BuildOperationStep.operation(BuildOperationStep.java:34)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0494086Z 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.captureExecutionState(AbstractCaptureStateBeforeExecutionStep.java:69)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0496080Z 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:62)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0497936Z 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0499705Z 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0501442Z 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:56)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0502822Z 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0504363Z 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0505974Z 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0507499Z 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0508939Z 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0510221Z 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0512316Z 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0513961Z 	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0515216Z 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0516094Z 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0517063Z 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0517706Z 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0518529Z 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0519500Z 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0520430Z 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0521407Z 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0522029Z 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0522972Z 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0523532Z 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0524446Z 	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0525298Z 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0526149Z 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0527014Z 	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0528241Z 	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0529297Z 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0530718Z 	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0532318Z 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0533591Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0534858Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0536054Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0537494Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0539178Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0540739Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0542276Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0543635Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0545032Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0546393Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0547764Z 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0549161Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0550425Z 	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0552017Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0553151Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0554338Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0555280Z 	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0556118Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0557097Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0558131Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0558888Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0559561Z 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0560229Z 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+build	UNKNOWN STEP	2025-09-21T08:43:22.0560600Z 
+build	UNKNOWN STEP	2025-09-21T08:43:22.0560606Z 
+build	UNKNOWN STEP	2025-09-21T08:43:22.0560687Z BUILD FAILED in 44s
+build	UNKNOWN STEP	2025-09-21T08:43:22.0560898Z 2 actionable tasks: 2 executed
+build	UNKNOWN STEP	2025-09-21T08:43:22.3726294Z ##[error]Process completed with exit code 1.
+build	UNKNOWN STEP	2025-09-21T08:43:22.3855405Z Post job cleanup.
+build	UNKNOWN STEP	2025-09-21T08:43:22.5626533Z Post job cleanup.
+build	UNKNOWN STEP	2025-09-21T08:43:22.6361498Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2025-09-21T08:43:22.6400858Z git version 2.51.0
+build	UNKNOWN STEP	2025-09-21T08:43:22.6445798Z Temporarily overriding HOME='/home/runner/work/_temp/6bfd7685-fa5a-4252-91f2-dd4accfb1491' before making global git config changes
+build	UNKNOWN STEP	2025-09-21T08:43:22.6446991Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2025-09-21T08:43:22.6450413Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cyber-security-app/cyber-security-app
+build	UNKNOWN STEP	2025-09-21T08:43:22.6483736Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2025-09-21T08:43:22.6514194Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2025-09-21T08:43:22.6757904Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2025-09-21T08:43:22.6778921Z http.https://github.com/.extraheader
+build	UNKNOWN STEP	2025-09-21T08:43:22.6790548Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	UNKNOWN STEP	2025-09-21T08:43:22.6819166Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2025-09-21T08:43:22.7137901Z Cleaning up orphan processes

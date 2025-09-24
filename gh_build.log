@@ -1,0 +1,395 @@
+build	Set up job	﻿2025-09-22T12:31:16.4873928Z Current runner version: '2.328.0'
+build	Set up job	2025-09-22T12:31:16.4908962Z ##[group]Runner Image Provisioner
+build	Set up job	2025-09-22T12:31:16.4910639Z Hosted Compute Agent
+build	Set up job	2025-09-22T12:31:16.4911574Z Version: 20250829.383
+build	Set up job	2025-09-22T12:31:16.4912557Z Commit: 27cb235aab5b0e52e153a26cd86b4742e89dac5d
+build	Set up job	2025-09-22T12:31:16.4913826Z Build Date: 2025-08-29T13:48:48Z
+build	Set up job	2025-09-22T12:31:16.4914727Z ##[endgroup]
+build	Set up job	2025-09-22T12:31:16.4915692Z ##[group]Operating System
+build	Set up job	2025-09-22T12:31:16.4916658Z Ubuntu
+build	Set up job	2025-09-22T12:31:16.4917432Z 24.04.3
+build	Set up job	2025-09-22T12:31:16.4918153Z LTS
+build	Set up job	2025-09-22T12:31:16.4919110Z ##[endgroup]
+build	Set up job	2025-09-22T12:31:16.4920057Z ##[group]Runner Image
+build	Set up job	2025-09-22T12:31:16.4921404Z Image: ubuntu-24.04
+build	Set up job	2025-09-22T12:31:16.4922230Z Version: 20250907.24.1
+build	Set up job	2025-09-22T12:31:16.4923955Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250907.24/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2025-09-22T12:31:16.4926569Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250907.24
+build	Set up job	2025-09-22T12:31:16.4928577Z ##[endgroup]
+build	Set up job	2025-09-22T12:31:16.4930873Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2025-09-22T12:31:16.4933369Z Contents: read
+build	Set up job	2025-09-22T12:31:16.4934315Z Metadata: read
+build	Set up job	2025-09-22T12:31:16.4935151Z Packages: read
+build	Set up job	2025-09-22T12:31:16.4935953Z ##[endgroup]
+build	Set up job	2025-09-22T12:31:16.4939296Z Secret source: Actions
+build	Set up job	2025-09-22T12:31:16.4940576Z Prepare workflow directory
+build	Set up job	2025-09-22T12:31:16.5412639Z Prepare all required actions
+build	Set up job	2025-09-22T12:31:16.5470036Z Getting action download info
+build	Set up job	2025-09-22T12:31:16.8103939Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+build	Set up job	2025-09-22T12:31:17.0000067Z Download action repository 'actions/setup-java@v4' (SHA:c5195efecf7bdfc987ee8bae7a71cb8b11521c00)
+build	Set up job	2025-09-22T12:31:17.2772689Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+build	Set up job	2025-09-22T12:31:17.4736052Z Complete job name: build
+build	Checkout repository	﻿2025-09-22T12:31:17.5407779Z ##[group]Run actions/checkout@v4
+build	Checkout repository	2025-09-22T12:31:17.5408636Z with:
+build	Checkout repository	2025-09-22T12:31:17.5409100Z   repository: Draizel-16/cyber-security-app
+build	Checkout repository	2025-09-22T12:31:17.5409802Z   token: ***
+build	Checkout repository	2025-09-22T12:31:17.5410366Z   ssh-strict: true
+build	Checkout repository	2025-09-22T12:31:17.5410785Z   ssh-user: git
+build	Checkout repository	2025-09-22T12:31:17.5411198Z   persist-credentials: true
+build	Checkout repository	2025-09-22T12:31:17.5411653Z   clean: true
+build	Checkout repository	2025-09-22T12:31:17.5412054Z   sparse-checkout-cone-mode: true
+build	Checkout repository	2025-09-22T12:31:17.5412542Z   fetch-depth: 1
+build	Checkout repository	2025-09-22T12:31:17.5412928Z   fetch-tags: false
+build	Checkout repository	2025-09-22T12:31:17.5413338Z   show-progress: true
+build	Checkout repository	2025-09-22T12:31:17.5413738Z   lfs: false
+build	Checkout repository	2025-09-22T12:31:17.5414113Z   submodules: false
+build	Checkout repository	2025-09-22T12:31:17.5414536Z   set-safe-directory: true
+build	Checkout repository	2025-09-22T12:31:17.5415225Z ##[endgroup]
+build	Checkout repository	2025-09-22T12:31:17.6486007Z Syncing repository: Draizel-16/cyber-security-app
+build	Checkout repository	2025-09-22T12:31:17.6487813Z ##[group]Getting Git version info
+build	Checkout repository	2025-09-22T12:31:17.6488621Z Working directory is '/home/runner/work/cyber-security-app/cyber-security-app'
+build	Checkout repository	2025-09-22T12:31:17.6489724Z [command]/usr/bin/git version
+build	Checkout repository	2025-09-22T12:31:17.6579470Z git version 2.51.0
+build	Checkout repository	2025-09-22T12:31:17.6606028Z ##[endgroup]
+build	Checkout repository	2025-09-22T12:31:17.6622111Z Temporarily overriding HOME='/home/runner/work/_temp/24400e60-5ec3-4e38-a7bc-96db0dd08c66' before making global git config changes
+build	Checkout repository	2025-09-22T12:31:17.6624479Z Adding repository directory to the temporary git global config as a safe directory
+build	Checkout repository	2025-09-22T12:31:17.6635673Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cyber-security-app/cyber-security-app
+build	Checkout repository	2025-09-22T12:31:17.6671338Z Deleting the contents of '/home/runner/work/cyber-security-app/cyber-security-app'
+build	Checkout repository	2025-09-22T12:31:17.6675035Z ##[group]Initializing the repository
+build	Checkout repository	2025-09-22T12:31:17.6679968Z [command]/usr/bin/git init /home/runner/work/cyber-security-app/cyber-security-app
+build	Checkout repository	2025-09-22T12:31:17.6792423Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Checkout repository	2025-09-22T12:31:17.6794060Z hint: is subject to change. To configure the initial branch name to use in all
+build	Checkout repository	2025-09-22T12:31:17.6795268Z hint: of your new repositories, which will suppress this warning, call:
+build	Checkout repository	2025-09-22T12:31:17.6796018Z hint:
+build	Checkout repository	2025-09-22T12:31:17.6797015Z hint: 	git config --global init.defaultBranch <name>
+build	Checkout repository	2025-09-22T12:31:17.6797722Z hint:
+build	Checkout repository	2025-09-22T12:31:17.6798407Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Checkout repository	2025-09-22T12:31:17.6800002Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Checkout repository	2025-09-22T12:31:17.6801476Z hint:
+build	Checkout repository	2025-09-22T12:31:17.6802164Z hint: 	git branch -m <name>
+build	Checkout repository	2025-09-22T12:31:17.6802949Z hint:
+build	Checkout repository	2025-09-22T12:31:17.6804013Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Checkout repository	2025-09-22T12:31:17.6805972Z Initialized empty Git repository in /home/runner/work/cyber-security-app/cyber-security-app/.git/
+build	Checkout repository	2025-09-22T12:31:17.6811096Z [command]/usr/bin/git remote add origin https://github.com/Draizel-16/cyber-security-app
+build	Checkout repository	2025-09-22T12:31:17.6848515Z ##[endgroup]
+build	Checkout repository	2025-09-22T12:31:17.6849731Z ##[group]Disabling automatic garbage collection
+build	Checkout repository	2025-09-22T12:31:17.6853494Z [command]/usr/bin/git config --local gc.auto 0
+build	Checkout repository	2025-09-22T12:31:17.6881568Z ##[endgroup]
+build	Checkout repository	2025-09-22T12:31:17.6882765Z ##[group]Setting up auth
+build	Checkout repository	2025-09-22T12:31:17.6888864Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Checkout repository	2025-09-22T12:31:17.6919154Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Checkout repository	2025-09-22T12:31:17.7258161Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Checkout repository	2025-09-22T12:31:17.7285969Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Checkout repository	2025-09-22T12:31:17.7503548Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Checkout repository	2025-09-22T12:31:17.7537893Z ##[endgroup]
+build	Checkout repository	2025-09-22T12:31:17.7539165Z ##[group]Fetching the repository
+build	Checkout repository	2025-09-22T12:31:17.7557147Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7dddb6392c78593a5d36b47de270d9d9ed9c95f6:refs/remotes/origin/main
+build	Checkout repository	2025-09-22T12:31:17.9543423Z From https://github.com/Draizel-16/cyber-security-app
+build	Checkout repository	2025-09-22T12:31:17.9546379Z  * [new ref]         7dddb6392c78593a5d36b47de270d9d9ed9c95f6 -> origin/main
+build	Checkout repository	2025-09-22T12:31:17.9578212Z ##[endgroup]
+build	Checkout repository	2025-09-22T12:31:17.9579450Z ##[group]Determining the checkout info
+build	Checkout repository	2025-09-22T12:31:17.9581513Z ##[endgroup]
+build	Checkout repository	2025-09-22T12:31:17.9585777Z [command]/usr/bin/git sparse-checkout disable
+build	Checkout repository	2025-09-22T12:31:17.9630936Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	Checkout repository	2025-09-22T12:31:17.9659254Z ##[group]Checking out the ref
+build	Checkout repository	2025-09-22T12:31:17.9662862Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build	Checkout repository	2025-09-22T12:31:17.9723343Z Switched to a new branch 'main'
+build	Checkout repository	2025-09-22T12:31:17.9726278Z branch 'main' set up to track 'origin/main'.
+build	Checkout repository	2025-09-22T12:31:17.9731857Z ##[endgroup]
+build	Checkout repository	2025-09-22T12:31:17.9765310Z [command]/usr/bin/git log -1 --format=%H
+build	Checkout repository	2025-09-22T12:31:17.9786516Z 7dddb6392c78593a5d36b47de270d9d9ed9c95f6
+build	Set up JDK 17	﻿2025-09-22T12:31:18.0094870Z ##[group]Run actions/setup-java@v4
+build	Set up JDK 17	2025-09-22T12:31:18.0095694Z with:
+build	Set up JDK 17	2025-09-22T12:31:18.0096195Z   distribution: temurin
+build	Set up JDK 17	2025-09-22T12:31:18.0096812Z   java-version: 17
+build	Set up JDK 17	2025-09-22T12:31:18.0097379Z   java-package: jdk
+build	Set up JDK 17	2025-09-22T12:31:18.0097965Z   check-latest: false
+build	Set up JDK 17	2025-09-22T12:31:18.0098558Z   server-id: github
+build	Set up JDK 17	2025-09-22T12:31:18.0099155Z   server-username: GITHUB_ACTOR
+build	Set up JDK 17	2025-09-22T12:31:18.0099905Z   server-password: GITHUB_TOKEN
+build	Set up JDK 17	2025-09-22T12:31:18.0100864Z   overwrite-settings: true
+build	Set up JDK 17	2025-09-22T12:31:18.0101537Z   job-status: success
+build	Set up JDK 17	2025-09-22T12:31:18.0102371Z   token: ***
+build	Set up JDK 17	2025-09-22T12:31:18.0102875Z ##[endgroup]
+build	Set up JDK 17	2025-09-22T12:31:18.2125766Z ##[group]Installed distributions
+build	Set up JDK 17	2025-09-22T12:31:18.2983337Z Resolved Java 17.0.16+8 from tool-cache
+build	Set up JDK 17	2025-09-22T12:31:18.2984936Z Setting Java 17.0.16+8 as the default
+build	Set up JDK 17	2025-09-22T12:31:18.2998631Z Creating toolchains.xml for JDK version 17 from temurin
+build	Set up JDK 17	2025-09-22T12:31:18.3075401Z Writing to /home/runner/.m2/toolchains.xml
+build	Set up JDK 17	2025-09-22T12:31:18.3076453Z 
+build	Set up JDK 17	2025-09-22T12:31:18.3076917Z Java configuration:
+build	Set up JDK 17	2025-09-22T12:31:18.3081201Z   Distribution: temurin
+build	Set up JDK 17	2025-09-22T12:31:18.3088145Z   Version: 17.0.16+8
+build	Set up JDK 17	2025-09-22T12:31:18.3089736Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	Set up JDK 17	2025-09-22T12:31:18.3091265Z 
+build	Set up JDK 17	2025-09-22T12:31:18.3092560Z ##[endgroup]
+build	Set up JDK 17	2025-09-22T12:31:18.3108080Z Creating settings.xml with server-id: github
+build	Set up JDK 17	2025-09-22T12:31:18.3108878Z Writing to /home/runner/.m2/settings.xml
+build	Grant execute permission for gradlew	﻿2025-09-22T12:31:18.3220999Z ##[group]Run chmod +x ./gradlew
+build	Grant execute permission for gradlew	2025-09-22T12:31:18.3222064Z [36;1mchmod +x ./gradlew[0m
+build	Grant execute permission for gradlew	2025-09-22T12:31:18.3281758Z shell: /usr/bin/bash -e {0}
+build	Grant execute permission for gradlew	2025-09-22T12:31:18.3282698Z env:
+build	Grant execute permission for gradlew	2025-09-22T12:31:18.3283678Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	Grant execute permission for gradlew	2025-09-22T12:31:18.3284921Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	Grant execute permission for gradlew	2025-09-22T12:31:18.3285971Z ##[endgroup]
+build	Build Debug APK (module :app)	﻿2025-09-22T12:31:18.3425879Z ##[group]Run ./gradlew --no-daemon --console=plain --stacktrace :app:assembleDebug
+build	Build Debug APK (module :app)	2025-09-22T12:31:18.3427137Z [36;1m./gradlew --no-daemon --console=plain --stacktrace :app:assembleDebug[0m
+build	Build Debug APK (module :app)	2025-09-22T12:31:18.3456887Z shell: /usr/bin/bash -e {0}
+build	Build Debug APK (module :app)	2025-09-22T12:31:18.3457671Z env:
+build	Build Debug APK (module :app)	2025-09-22T12:31:18.3458542Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	Build Debug APK (module :app)	2025-09-22T12:31:18.3459663Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+build	Build Debug APK (module :app)	2025-09-22T12:31:18.3460877Z ##[endgroup]
+build	Build Debug APK (module :app)	2025-09-22T12:31:24.5984693Z Downloading https://services.gradle.org/distributions/gradle-8.7-all.zip
+build	Build Debug APK (module :app)	2025-09-22T12:31:34.7904069Z .....................10%.....................20%......................30%.....................40%......................50%.....................60%.....................70%......................80%.....................90%......................100%
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1052735Z 
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1055260Z Welcome to Gradle 8.7!
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1056037Z 
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1058003Z Here are the highlights of this release:
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1060048Z  - Compiling and testing with Java 22
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1061911Z  - Cacheable Groovy script compilation
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1063149Z  - New methods in lazy collection properties
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1063607Z 
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1064009Z For more details see https://docs.gradle.org/8.7/release-notes.html
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.1064854Z 
+build	Build Debug APK (module :app)	2025-09-22T12:31:39.9897400Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.7/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+build	Build Debug APK (module :app)	2025-09-22T12:31:43.2894318Z Daemon will be stopped at the end of the build 
+build	Build Debug APK (module :app)	2025-09-22T12:33:09.1915813Z > Task :app:preBuild UP-TO-DATE
+build	Build Debug APK (module :app)	2025-09-22T12:33:09.1921283Z > Task :app:preDebugBuild UP-TO-DATE
+build	Build Debug APK (module :app)	2025-09-22T12:33:09.2903117Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+build	Build Debug APK (module :app)	2025-09-22T12:33:09.2907735Z > Task :app:checkKotlinGradlePluginConfigurationErrors
+build	Build Debug APK (module :app)	2025-09-22T12:33:39.2893828Z > Task :app:checkDebugAarMetadata
+build	Build Debug APK (module :app)	2025-09-22T12:33:59.5895805Z > Task :app:generateDebugResValues
+build	Build Debug APK (module :app)	2025-09-22T12:33:59.6894123Z > Task :app:mapDebugSourceSetPaths
+build	Build Debug APK (module :app)	2025-09-22T12:33:59.6900602Z > Task :app:generateDebugResources
+build	Build Debug APK (module :app)	2025-09-22T12:34:01.0894127Z > Task :app:packageDebugResources
+build	Build Debug APK (module :app)	2025-09-22T12:34:02.1893460Z > Task :app:mergeDebugResources
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.2894481Z > Task :app:createDebugCompatibleScreenManifests
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.2897908Z > Task :app:extractDeepLinksDebug
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.3892802Z > Task :app:parseDebugLocalResources
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.4892972Z > Task :app:processDebugMainManifest FAILED
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5922178Z 
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5923886Z FAILURE: Build failed with an exception.
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5925201Z 
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5925624Z * What went wrong:
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5926389Z Execution failed for task ':app:processDebugMainManifest'.
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5928067Z > com.android.manifmerger.ManifestMerger2$MergeFailureException: Error parsing /home/runner/work/cyber-security-app/cyber-security-app/app/src/main/AndroidManifest.xml
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5936579Z 
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5936987Z * Try:
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5937654Z > Run with --info or --debug option to get more log output.
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5938505Z > Run with --scan to get full insights.
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5939218Z > Get more help at https://help.gradle.org.
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5939729Z 
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5940006Z * Exception is:
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5944789Z org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:processDebugMainManifest'.
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5946531Z 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5947892Z 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5955479Z 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5957405Z 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5958902Z 	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5960709Z 	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5967125Z 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5968644Z 	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5970045Z 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5971646Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5973008Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5974342Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5975925Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5977621Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5979182Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5980920Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5982482Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5983972Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5985426Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5986898Z 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5988566Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5989942Z 	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5991651Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5993767Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5995825Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5997560Z 	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.5999232Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6001412Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6003081Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6004418Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6005753Z 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6007280Z 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6009250Z Caused by: java.lang.RuntimeException: com.android.manifmerger.ManifestMerger2$MergeFailureException: Error parsing /home/runner/work/cyber-security-app/cyber-security-app/app/src/main/AndroidManifest.xml
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6069625Z 	at com.android.build.gradle.internal.tasks.manifest.ManifestHelperKt.mergeManifests(ManifestHelper.kt:153)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6071272Z 	at com.android.build.gradle.internal.tasks.manifest.ManifestHelperKt.mergeManifests$default(ManifestHelper.kt:46)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6072717Z 	at com.android.build.gradle.tasks.ProcessApplicationManifest.doTaskAction(ProcessApplicationManifest.kt:163)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6074174Z 	at com.android.build.gradle.internal.tasks.NonIncrementalTask$taskAction$$inlined$recordTaskAction$1.invoke(BaseTask.kt:66)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6075307Z 	at com.android.build.gradle.internal.tasks.Blocks.recordSpan(Blocks.java:51)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6076312Z 	at com.android.build.gradle.internal.tasks.NonIncrementalTask.taskAction(NonIncrementalTask.kt:97)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6077362Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6078351Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6079544Z 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6111359Z 	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6112508Z 	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:58)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6113853Z 	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6115160Z 	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6116315Z 	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6117610Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6118996Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6120678Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6122083Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6123449Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6125053Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6126403Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6127774Z 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:68)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6129082Z 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6130456Z 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6131783Z 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6133042Z 	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6134101Z 	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6135145Z 	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6136081Z 	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6137217Z 	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6138547Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6170595Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6172454Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6173863Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6175254Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6176619Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6177984Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6179325Z 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6180692Z 	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6181648Z 	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6182782Z 	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6183954Z 	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6185009Z 	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6186175Z 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6187627Z 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6189024Z 	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6190589Z 	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6192052Z 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6193554Z 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6195130Z 	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:67)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6197066Z 	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:45)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6198567Z 	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6199909Z 	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6206158Z 	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6208034Z 	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6209577Z 	at org.gradle.internal.Either$Right.fold(Either.java:175)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6210781Z 	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6212453Z 	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6213525Z 	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6214720Z 	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6216266Z 	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6217508Z 	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:76)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6218709Z 	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:54)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6219852Z 	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:54)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6221093Z 	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:36)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6222532Z 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6224742Z 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6226579Z 	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6228448Z 	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6230318Z 	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6231935Z 	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6233310Z 	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6261545Z 	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6262674Z 	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:106)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6263676Z 	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:55)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6265138Z 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6267057Z 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6268879Z 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6270595Z 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:56)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6271965Z 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6273781Z 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6275435Z 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6276974Z 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6278392Z 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6279691Z 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6311455Z 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6312820Z 	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6314106Z 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6315524Z 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6317054Z 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6318248Z 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6319752Z 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6321742Z 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6323514Z 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6324995Z 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6326146Z 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6327240Z 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6328222Z 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6329367Z 	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6330997Z 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6332538Z 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6334065Z 	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6335674Z 	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6337260Z 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6338707Z 	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6340105Z 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6371815Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6372928Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6373986Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6375663Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6377522Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6379161Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6380737Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6382192Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6383630Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6385016Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6386402Z 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6387807Z 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6389315Z 	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6390884Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6392554Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6394336Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6395895Z 	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6397429Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6399249Z 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6431115Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6432391Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6433654Z 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6434940Z 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6436651Z Caused by: com.android.manifmerger.ManifestMerger2$MergeFailureException: Error parsing /home/runner/work/cyber-security-app/cyber-security-app/app/src/main/AndroidManifest.xml
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6438203Z 	at com.android.manifmerger.ManifestMerger2.load(ManifestMerger2.java:1094)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6439074Z 	at com.android.manifmerger.ManifestMerger2.merge(ManifestMerger2.java:183)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6440014Z 	at com.android.manifmerger.ManifestMerger2$Invoker.merge(ManifestMerger2.java:2164)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6441386Z 	at com.android.build.gradle.internal.tasks.manifest.ManifestHelperKt.mergeManifests(ManifestHelper.kt:121)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6442282Z 	... 128 more
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6443314Z Caused by: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 3; The element type "application" must be terminated by the matching end-tag "</application>".
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6445046Z 	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6446518Z 	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6448102Z 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6449391Z 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6450857Z 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6452390Z 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1695)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6454324Z 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6456019Z 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6457325Z 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6458954Z 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6481966Z 	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6483614Z 	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6484810Z 	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6486004Z 	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6487257Z 	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6488432Z 	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:326)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6489467Z 	at com.android.utils.PositionXmlParser.parseInternal(PositionXmlParser.java:284)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6490587Z 	at com.android.utils.PositionXmlParser.parseInternal(PositionXmlParser.java:233)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6491512Z 	at com.android.utils.PositionXmlParser.parse(PositionXmlParser.java:179)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6492354Z 	at com.android.utils.PositionXmlParser.parse(PositionXmlParser.java:97)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6493185Z 	at com.android.utils.PositionXmlParser.parse(PositionXmlParser.java:135)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6493950Z 	at com.android.manifmerger.XmlLoader.load(XmlLoader.java:62)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6494727Z 	at com.android.manifmerger.ManifestMerger2.load(ManifestMerger2.java:1083)
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6495404Z 	... 131 more
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6495593Z 
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6495606Z 
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6495738Z BUILD FAILED in 2m 41s
+build	Build Debug APK (module :app)	2025-09-22T12:34:04.6496096Z 11 actionable tasks: 11 executed
+build	Build Debug APK (module :app)	2025-09-22T12:34:05.1192728Z ##[error]Process completed with exit code 1.
+build	Post Set up JDK 17	﻿2025-09-22T12:34:05.1303464Z Post job cleanup.
+build	Post Checkout repository	﻿2025-09-22T12:34:05.3053434Z Post job cleanup.
+build	Post Checkout repository	2025-09-22T12:34:05.4036404Z [command]/usr/bin/git version
+build	Post Checkout repository	2025-09-22T12:34:05.4076502Z git version 2.51.0
+build	Post Checkout repository	2025-09-22T12:34:05.4120919Z Temporarily overriding HOME='/home/runner/work/_temp/6c35e5df-d399-406a-aec9-adede7ae84a2' before making global git config changes
+build	Post Checkout repository	2025-09-22T12:34:05.4122202Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Checkout repository	2025-09-22T12:34:05.4134394Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cyber-security-app/cyber-security-app
+build	Post Checkout repository	2025-09-22T12:34:05.4168578Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Checkout repository	2025-09-22T12:34:05.4201438Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Checkout repository	2025-09-22T12:34:05.4450748Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Post Checkout repository	2025-09-22T12:34:05.4475118Z http.https://github.com/.extraheader
+build	Post Checkout repository	2025-09-22T12:34:05.4488349Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	Post Checkout repository	2025-09-22T12:34:05.4520812Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Complete job	﻿2025-09-22T12:34:05.4887300Z Cleaning up orphan processes

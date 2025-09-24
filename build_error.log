@@ -1,0 +1,26 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+
+> Task :app:mergeDebugResources FAILED
+ERROR: /data/data/com.termux/files/home/cyber-security-app/app/src/main/res/backup_values/styles.xml.bak_20250925002920: Resource and asset merger: The file name must end with .xml
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeDebugResources'.
+> /data/data/com.termux/files/home/cyber-security-app/app/src/main/res/backup_values/styles.xml.bak_20250925002920: Error: The file name must end with .xml
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5s
+6 actionable tasks: 4 executed, 2 up-to-date

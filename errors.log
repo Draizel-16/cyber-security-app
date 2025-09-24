@@ -1,0 +1,15 @@
+build	UNKNOWN STEP	2025-09-21T16:16:35.1338352Z > Task :app:checkKotlinGradlePluginConfigurationErrors
+build	UNKNOWN STEP	2025-09-21T16:17:08.1384994Z > Task :app:checkDebugAarMetadata FAILED
+build	UNKNOWN STEP	2025-09-21T16:17:08.1395761Z FAILURE: Build failed with an exception.
+build	UNKNOWN STEP	2025-09-21T16:17:08.1396697Z Execution failed for task ':app:checkDebugAarMetadata'.
+build	UNKNOWN STEP	2025-09-21T16:17:08.2541405Z * Exception is:
+build	UNKNOWN STEP	2025-09-21T16:17:08.2542088Z org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:checkDebugAarMetadata'.
+build	UNKNOWN STEP	2025-09-21T16:17:08.2543665Z 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:38)
+build	UNKNOWN STEP	2025-09-21T16:17:08.2640040Z 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+build	UNKNOWN STEP	2025-09-21T16:17:08.2648827Z Caused by: com.android.builder.errors.EvalIssueException: Configuration `:app:debugRuntimeClasspath` contains AndroidX dependencies, but the `android.useAndroidX` property is not enabled, which may cause runtime issues.
+build	UNKNOWN STEP	2025-09-21T16:17:08.2732230Z 	at com.android.builder.errors.IssueReporter.reportError(IssueReporter.kt:114)
+build	UNKNOWN STEP	2025-09-21T16:17:08.2733401Z 	at com.android.builder.errors.IssueReporter.reportError$default(IssueReporter.kt:110)
+build	UNKNOWN STEP	2025-09-21T16:17:08.2879649Z 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+build	UNKNOWN STEP	2025-09-21T16:17:08.2958312Z 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+build	UNKNOWN STEP	2025-09-21T16:17:08.2960375Z BUILD FAILED in 1m 46s
+build	UNKNOWN STEP	2025-09-21T16:17:08.6566484Z ##[error]Process completed with exit code 1.

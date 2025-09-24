@@ -1,0 +1,5 @@
+build	Build Debug APK (module :app)	2025-09-23T15:22:25.7549632Z > Task :app:checkKotlinGradlePluginConfigurationErrors
+build	Build Debug APK (module :app)	2025-09-23T15:23:05.8552773Z /home/runner/work/cyber-security-app/cyber-security-app/app/src/main/AndroidManifest.xml:8:9-13:20 Error:
+build	Build Debug APK (module :app)	2025-09-23T15:23:06.3397867Z ##[error]Process completed with exit code 1.
+Debug APK (module :app)	2025-09-23T15:23:06.3397867Z ##[error]Process completed with exit code 1.
+✅ Error tersimpan di gh_last_error.log
