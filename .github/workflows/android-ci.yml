@@ -2,55 +2,74 @@ name: Android CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
 
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v3
         with:
           distribution: temurin
-          java-version: 17
+          java-version: '17'
 
-      - name: Set Gradle permissions
-        run: chmod +x gradlew
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          api-level: 34
+          build-tools: 34.0.0
+          components: platform-tools,platforms;android-34
 
-      - name: Clean project
-        run: ./gradlew clean
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
 
+      # Build Debug
       - name: Build Debug APK
-        run: ./gradlew assembleDebug
+        run: ./gradlew --no-daemon --console=plain assembleDebug --stacktrace
 
+      # Build Release (unsigned first)
       - name: Build Release APK
-        run: ./gradlew assembleRelease
+        run: ./gradlew --no-daemon --console=plain assembleRelease --stacktrace
 
-      - name: Build AAB (Release Bundle)
-        run: ./gradlew bundleRelease
+      # Decode keystore dari base64 (butuh secret SIGNING_KEY)
+      - name: Decode Keystore
+        run: echo "${{ secrets.SIGNING_KEY }}" | base64 --decode > release.keystore
 
+      # Sign APK (butuh secret ALIAS, KEY_STORE_PASSWORD, KEY_PASSWORD)
+      - name: Sign APK
+        run: |
+          jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
+            -keystore release.keystore \
+            -storepass "${{ secrets.KEY_STORE_PASSWORD }}" \
+            -keypass "${{ secrets.KEY_PASSWORD }}" \
+            app/build/outputs/apk/release/app-release-unsigned.apk \
+            "${{ secrets.ALIAS }}"
+
+      # Align APK
+      - name: Zipalign APK
+        run: |
+          $ANDROID_HOME/build-tools/34.0.0/zipalign -v -p 4 \
+            app/build/outputs/apk/release/app-release-unsigned.apk \
+            app/build/outputs/apk/release/app-release-signed.apk
+
+      # Upload debug APK
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
           path: app/build/outputs/apk/debug/*.apk
 
-      - name: Upload Release APK
+      # Upload signed release APK
+      - name: Upload Signed Release APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-release
-          path: app/build/outputs/apk/release/*.apk
-
-      - name: Upload AAB
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-bundle
-          path: app/build/outputs/bundle/release/*.aab
+          name: app-release-signed
+          path: app/build/outputs/apk/release/app-release-signed.apk
