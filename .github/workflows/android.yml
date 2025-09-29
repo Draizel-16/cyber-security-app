@@ -43,6 +43,13 @@ EOF
       - name: Copy google-services.json
         run: cp app/google-services.json ./app/google-services.json || echo "⚠️ google-services.json tidak ada"
 
+      - name: Restore Firebase config (google-services.json)
+        env:
+          GS_B64: ${{ secrets.GOOGLE_SERVICES_JSON_BASE64 }}
+        run: |
+          mkdir -p app
+          echo "$GS_B64" | base64 -d > app/google-services.json
+          echo "✔ google-services.json ditulis"
       - name: Build Release APK
         run: ./gradlew assembleRelease --no-daemon
 
