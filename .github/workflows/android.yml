@@ -9,52 +9,34 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Setup Java
+      - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: 17
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v2
-        with:
-          api-level: '34'
-          build-tools: '34.0.0'
-
-      - name: Decode keystore
+      - name: Decode Keystore
         env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-        run: echo "$KEYSTORE_BASE64" | base64 -d > release.keystore
-
-      - name: Create keystore.properties
+          KEYSTORE_B64: ${{ secrets.KEYSTORE_B64 }}
         run: |
-          cat > keystore.properties <<EOF
+          echo "$KEYSTORE_B64" | base64 -d > release.keystore
+          cat > keystore.properties <<EOKEY
           storeFile=release.keystore
           storePassword=${{ secrets.KEY_STORE_PASSWORD }}
           keyAlias=${{ secrets.KEY_ALIAS }}
           keyPassword=${{ secrets.KEY_PASSWORD }}
-EOF
+          EOKEY
 
-      - name: Copy google-services.json
-        run: cp app/google-services.json ./app/google-services.json || echo "⚠️ google-services.json tidak ada"
-
-      - name: Restore Firebase config (google-services.json)
+      - name: Restore Firebase config
         env:
           GS_B64: ${{ secrets.GOOGLE_SERVICES_JSON_BASE64 }}
         run: |
           mkdir -p app
           echo "$GS_B64" | base64 -d > app/google-services.json
-          echo "✔ google-services.json ditulis"
-      - name: Build Release APK
-        run: ./gradlew assembleRelease --no-daemon
 
-      - name: Upload Release APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-apk
-          path: app/build/outputs/apk/release/*.apk
+      - name: Build with Gradle
+        run: ./gradlew assembleRelease
