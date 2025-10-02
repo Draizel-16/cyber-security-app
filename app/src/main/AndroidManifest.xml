@@ -9,5 +9,6 @@
     </activity>
     <activity android:name=".DashboardActivity" />
     <activity android:name=".PasswordGeneratorActivity" />
+    <activity android:name=".EncryptActivity" />
   </application>
 </manifest>
