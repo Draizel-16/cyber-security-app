@@ -29,4 +29,10 @@
         android:hint="Output"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Output"
+        android:textSize="16sp"/>
 </LinearLayout>
