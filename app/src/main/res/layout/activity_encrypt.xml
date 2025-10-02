@@ -1,31 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="16dp">
 
     <EditText
-        android:id="@+id/edtInput"
+        android:id="@+id/editTextInput"
+        android:hint="Enter text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan teks"/>
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btnEncrypt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Encrypt"/>
+        android:text="Encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btnDecrypt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Decrypt"/>
+        android:text="Decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <TextView
-        android:id="@+id/txtOutput"
-        android:layout_width="match_parent"
+        android:id="@+id/txtResult"
+        android:text="Result"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="12dp"
-        android:textSize="16sp"/>
+        android:paddingTop="20dp"/>
 </LinearLayout>
