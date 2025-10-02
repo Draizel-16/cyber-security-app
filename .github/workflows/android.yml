@@ -39,5 +39,8 @@ jobs:
           mkdir -p app
           echo "$GS_B64" | base64 -d > app/google-services.json
 
+    - name: Setup Android SDK
+      run: echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+
       - name: Build with Gradle
         run: ./gradlew assembleRelease
