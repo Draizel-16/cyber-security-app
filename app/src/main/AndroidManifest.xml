@@ -10,5 +10,6 @@
     <activity android:name=".DashboardActivity" />
     <activity android:name=".PasswordGeneratorActivity" />
     <activity android:name=".EncryptActivity" />
+        <activity android:name=".ui.LoginActivity" />
   </application>
 </manifest>
