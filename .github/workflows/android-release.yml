@@ -4,8 +4,6 @@ name: Android Release
   push:
     branches: [ main ]
     branches: [ main ]
-    branches: [ main ]
-    branches: [ "main" ]
 
 jobs:
   build:
