@@ -1,6 +1,5 @@
 name: Android Release
 
-on:
   workflow_dispatch:
   push:
     branches: [ main ]
@@ -34,3 +33,7 @@ jobs:
         with:
           name: CyberSecurityApp-release
           path: app/build/outputs/apk/release/*.apk
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
