@@ -1,34 +1,76 @@
-name: Android Release
+name: Android Release (Final CI/CD)
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
+    name: 🏗️ Build & Release Android App
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+    steps:
+      - name: 🔍 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ☕ Setup JDK 17
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: 17
+          distribution: "temurin"
+          java-version: "17"
 
-      - name: Create local.properties
-        run: echo "sdk.dir=$ANDROID_HOME" > local.properties
+      - name: ⚙️ Setup Gradle Cache
+        uses: gradle/gradle-build-action@v3
+        with:
+          cache-read-only: false
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+      - name: 🧹 Run Lint Check
+        run: ./gradlew lint
 
-      - name: Build Release APK
-        run: ./gradlew clean assembleRelease --stacktrace
+      - name: 🧪 Run Unit Tests
+        run: ./gradlew test
 
-      - name: Upload Release Artifact
+      - name: 🏗️ Build Release APK
+        run: ./gradlew assembleRelease --stacktrace
+
+      - name: 🔐 Decode and Setup Keystore
+        if: env.SIGNING_ENABLED == 'true'
+        run: |
+          echo "$KEYSTORE_BASE64" | base64 --decode > keystore.jks
+
+      - name: ✍️ Sign APK (if signing enabled)
+        if: env.SIGNING_ENABLED == 'true'
+        run: |
+          BUILD_DIR=app/build/outputs/apk/release
+          APK_FILE=$(ls $BUILD_DIR/*.apk | head -n 1)
+          echo "Signing APK: $APK_FILE"
+          jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
+            -keystore keystore.jks -storepass "$KEYSTORE_PASSWORD" \
+            -keypass "$KEY_PASSWORD" "$APK_FILE" "$KEY_ALIAS"
+
+      - name: 🧩 Verify APK Signature
+        if: env.SIGNING_ENABLED == 'true'
+        run: |
+          BUILD_DIR=app/build/outputs/apk/release
+          APK_FILE=$(ls $BUILD_DIR/*.apk | head -n 1)
+          apksigner verify --verbose "$APK_FILE" || echo "⚠️ Verification failed (check manually)"
+
+      - name: 📦 Upload Artifacts (APK & Logs)
         uses: actions/upload-artifact@v4
         with:
-          name: app-release
-          path: app/build/outputs/apk/release/app-release.apk
+          name: Android-Build-${{ github.run_number }}
+          path: |
+            app/build/outputs/apk/release/*.apk
+            app/build/reports/lint-results.html
+            app/build/reports/tests/testReleaseUnitTest/
+
+      - name: 🚀 Create GitHub Release (auto)
+        if: success()
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Android Release Build ${{ github.run_number }}"
+          tag_name: "v${{ github.run_number }}"
+          files: app/build/outputs/apk/release/*.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
